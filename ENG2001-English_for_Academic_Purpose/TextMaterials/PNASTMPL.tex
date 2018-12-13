@@ -67,6 +67,11 @@
 % [truetex], [tcidvi], [vtex], [oztex], [textures], [xetex]
 
 \usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage[font=small,labelfont=bf]{caption}
+\renewcommand{\baselinestretch}{1.25}
 
 %------------------------------------------------
 % OPTIONAL POSTSCRIPT FONT FILES
@@ -91,6 +96,7 @@
 %% like extended math fonts and math commands.
 
 \usepackage{amssymb,amsfonts,amsmath}
+
 
 %------------------------------------------------
 % OPTIONAL MACRO FILES
@@ -131,7 +137,7 @@
 %% (Leave no spaces between author name and \affil command)
 
 %% Note that the \thanks{} command has been disabled in favor of
-%% a generic, reserved space for PNAS publication footnotes.
+%% a generic, reserved space for PNAS publication.
 
 %% \author{<author name>
 %% \affil{<number>}{<Institution>}} One number for each institution.
@@ -150,8 +156,7 @@
 %% Javier de Ruiz Garcia\affil{2}{Universidad de Murcia, Bioquimica y Biologia
 %% Molecular, Murcia, Spain}, \and Franklin Sonnery\affil{2}{}}
 
-\author{Vito WU\affil{1}{The Chinese University of Hong Kong, Shenzhen}}
-
+\author{Vito WU 117010285\affil{1}{The Chinese University of Hong Kong, Shenzhen}}
 
 \contributor{}
 
@@ -193,287 +198,80 @@ The objective of this research is to investigate and explore the relationship be
 
 \section{Introduction}
 
-\dropcap{R}eports in recent years indicate that high school and college students are facing a perceptible decrease on their average sleep qualities and sleep duration, and it can be verified by observations and interviews of self-behavior from students in CUHK(SZ). With physiological researches showing that both sleep qualities and sleep duration correlate with one's cognitive functions, the deeper effect of sleep qualities and sleep duration might also correlate to one's academic performance by affecting one's cognitive functions.  \cite{CLAcha1}.
+\dropcap{R}eports in recent years indicate that high school and college students are facing a perceptible decrease on their average sleep qualities and sleep duration, and it can be verified by observations and interviews of self-behavior from students in CUHK(SZ). With physiological researches showing that both sleep qualities and sleep duration correlate with one's cognitive functions, a reasonable inference can be established that the effect of sleep qualities and sleep duration might also intermediately affect one's academic performance by affecting cognitive functions.\par
+A supporting report proposed by a study group from Netherlands claimed that, sleep qualities and sleep duration have slight affect on students' academic performance. Concluded from their report and previous reports they referred to, the common and unavoidable problem in the research is lack of appropriate approaches to measure the real academic performance of the respondents. Principally previous researchers applied self-reported GPA and parent-reported GPA in their research to represent the academic performance, which would explicitly cause publication bias while respondents concerning about the potential privacy leak. For purpose of hedging the subjective bias, even though in our research the adopted approach is still subject-reported GPA, we designed a cross-validation section. If the cross-validation we proposed can support the result we received from subject-reported GPA, the impact of publication bias would be reduced.\par 
+Our research focuses on the correlation between the sleep qualities and academic performance, and therefore the questions we planned to investigate are 
+\begin{itemize}
+	\item The relationship between sleep qualities and academic performance
+	\item The respective relationship between academic performance and each factors of sleep qualities
+\end{itemize}
 
-Referencing equation \eqref{qg1}. Praesent volutpat, nibh in dignissim commodo, tellus justo consequat erat, vel consequat mi arcu vel lectus. Aliquam a tellus nec felis sagittis consequat. Quisque convallis imperdiet neque a tempor. Nulla non erat urna. Mauris vel lorem magna, tristique auctor ipsum. Aliquam pharetra eleifend massa. Donec porttitor sagittis luctus. Aliquam pretium luctus leo quis congue. Morbi vel felis mi. Suspendisse viverra tortor pretium orci lacinia eleifend. Phasellus aliquam, nunc eu cursus feugiat, erat odio porttitor libero, quis accumsan orci ipsum ut lorem. Vestibulum pharetra malesuada egestas. Sed non orci sit amet erat suscipit fringilla in et diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc ut rhoncus nulla. Aenean porta rhoncus suscipit.
+
+%------------------------------------------------
+
+\section{Methodologies}
+
+\subsection{Measurements of Sleep Quality}
+
+~\ In our research we use a scientific and quantitive index to measure the sleep qualities of respondents, the Pittsburgh Sleep Quality Index (PSQI), which contains 19 self-rated questions. Questionnaire is divided into 7 components which represents distinct factors of sleep qualities. The score 
+
+\subsection{Measurements of Academic Performance}
+~\ \\
+\textbf{1. self-reported GPA} \par We designed questionnaires including PSQI questions and GPA information, and published them online. After two weeks of publication we terminate the data collecting stage and move to data analysis.
+
+ 
+\textbf{2. In-class evaluation in MAT2040 Lecture} \par Since every two week there is an in-class evaluation in Linear Algebra lecture this semester, that students will be asked to answer one question relative to lecture and assignments. We expect to evolve in-class evaluation as an cross-validate experiment and analyze the corrigendum of their submissions and PSQI score. 
+
+\subsection{Correlation Analysis}
+~\ Statistical correlation analysis was applied in our research. The procedure of correlation analysis is to calculate the correlation coefficients of two variables, self-reported GPA and PSQI score, using the formula
+\begin{equation}
+	\rho = \frac{E[(X - \mu_x)(Y - \mu_y)]}{\sigma_x\sigma_y}
+\end{equation}
+The correlation is represented by the correlation coefficient $\rho$, which has a range of $-1 \leq \rho \leq 1 $, where positive $\rho$ indicates positive correlation and negative $\rho$ indicates negative correlation. Closer the absolute value of $\rho$ to 1 corresponds to a stronger correlation between two variables.
+
+\subsection{Participants}
+
+~\ Our research was performed in The Chinese University of Hong Kong, Shenzhen, a young university in southern China. Different from majority of universities in mainland China, CUHK(SZ) inherits the education and evaluation system from CUHK. The study fee in CUHK(SZ) is 98500 CNY per year according to official announcement.
 
 %------------------------------------------------
 
 \section{Results}
 
-Mauris vel lorem magna, tristique auctor ipsum. Aliquam pharetra eleifend massa. Donec porttitor sagittis luctus. Aliquam pretium luctus leo quis congue. Morbi vel felis mi. Referencing Table \ref{sampletable}. Referencing Figure \ref{placeholder}.
-
-\subsection{Simulations}
-
-\subsubsection{Simulation 1}
-
-Vivamus magna enim, aliquet id cursus a, pharetra ut purus. Phasellus suscipit nisi iaculis mi vulputate id interdum velit dictum. Nam ullamcorper elit in lectus ultrices vitae volutpat massa gravida. Etiam sagittis commodo neque eget placerat. Sed et nisi faucibus metus interdum adipiscing id nec lacus. Donec ipsum diam, malesuada at euismod consectetur, placerat quis diam. Phasellus cursus semper viverra. Proin magna tortor, blandit in ultricies id, facilisis at nibh. Proin eu neque est. Etiam euismod auctor ante. Mauris mauris sem, tincidunt a placerat rutrum, porta id est. Aenean non velit porta eros condimentum facilisis at in nibh. Etiam cursus purus ut orci rhoncus sit amet semper eros porttitor. Etiam ac leo at ipsum tincidunt consequat ac non sapien. Aenean sed leo diam, venenatis pharetra odio.
-
-\subsubsection{Simulation 2}
-
-Suspendisse viverra eleifend nulla at facilisis. Nullam eget tellus orci. Cras sit amet lorem velit. Maecenas rhoncus pellentesque orci eget vulputate. Phasellus massa nisi, mattis nec elementum accumsan, blandit non neque. In ac enim elit, sit amet luctus ante. Cras feugiat commodo lectus, vitae convallis dui sagittis id. In in tellus lacus, sed lobortis eros. Phasellus sit amet eleifend velit. Duis ornare dapibus porttitor. Maecenas eros velit, dignissim at egestas in, tincidunt lacinia erat. Proin elementum mi vel lectus suscipit fringilla. Mauris justo est, ullamcorper in rutrum interdum, accumsan eget mi. Maecenas ut massa aliquet purus eleifend vehicula in a nisi. Fusce molestie cursus lacinia.
-
-\subsection{Real Data}
-
-Aliquam interdum pellentesque scelerisque. Sed tincidunt suscipit purus, id aliquet nulla vehicula quis. Duis sed nisl lorem. Vivamus erat ante, dignissim et aliquam vel, adipiscing vitae magna. Cras id dapibus metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin ut lectus ut nisi congue ullamcorper. Ut ac turpis ligula. Sed faucibus bibendum nunc eget gravida.
-
-%------------------------------------------------
-
-\section{Discussion}
-
-Nam fermentum sapien at enim varius consectetur. Quisque lobortis imperdiet mauris, et accumsan libero vulputate vitae. Integer lacinia purus vel metus tempus suscipit. Curabitur ac sapien quis mauris euismod commodo. Sed pharetra sem elit. Fusce ultrices, mauris eu fermentum tempor, tellus sem ornare lectus, in convallis nunc urna id dolor. Donec convallis ligula vitae sem viverra fermentum. Mauris in ullamcorper erat. Donec ultrices tempus nibh quis vestibulum.
-
-Praesent volutpat, nibh in dignissim commodo, tellus justo consequat erat, vel consequat mi arcu vel lectus. Aliquam a tellus nec felis sagittis consequat. Quisque convallis imperdiet neque a tempor. Nulla non erat urna. Mauris vel lorem magna, tristique auctor ipsum. Aliquam pharetra eleifend massa. Donec porttitor sagittis luctus. Aliquam pretium luctus leo quis congue. Morbi vel felis mi. Suspendisse viverra tortor pretium orci lacinia eleifend. Phasellus aliquam, nunc eu cursus feugiat, erat odio porttitor libero, quis accumsan orci ipsum ut lorem. Vestibulum pharetra malesuada egestas. Sed non orci sit amet erat suscipit fringilla in et diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc ut rhoncus nulla. Aenean porta rhoncus suscipit.
-
-Vivamus magna enim, aliquet id cursus a, pharetra ut purus. Phasellus suscipit nisi iaculis mi vulputate id interdum velit dictum. Nam ullamcorper elit in lectus ultrices vitae volutpat massa gravida. Etiam sagittis commodo neque eget placerat. Sed et nisi faucibus metus interdum adipiscing id nec lacus. Donec ipsum diam, malesuada at euismod consectetur, placerat quis diam. Phasellus cursus semper viverra. Proin magna tortor, blandit in ultricies id, facilisis at nibh. Proin eu neque est. Etiam euismod auctor ante. Mauris mauris sem, tincidunt a placerat rutrum, porta id est. Aenean non velit porta eros condimentum facilisis at in nibh. Etiam cursus purus ut orci rhoncus sit amet semper eros porttitor. Etiam ac leo at ipsum tincidunt consequat ac non sapien. Aenean sed leo diam, venenatis pharetra odio.
-
-Suspendisse viverra eleifend nulla at facilisis. Nullam eget tellus orci. Cras sit amet lorem velit. Maecenas rhoncus pellentesque orci eget vulputate. Phasellus massa nisi, mattis nec elementum accumsan, blandit non neque. In ac enim elit, sit amet luctus ante. Cras feugiat commodo lectus, vitae convallis dui sagittis id. In in tellus lacus, sed lobortis eros. Phasellus sit amet eleifend velit. Duis ornare dapibus porttitor. Maecenas eros velit, dignissim at egestas in, tincidunt lacinia erat. Proin elementum mi vel lectus suscipit fringilla. Mauris justo est, ullamcorper in rutrum interdum, accumsan eget mi. Maecenas ut massa aliquet purus eleifend vehicula in a nisi. Fusce molestie cursus lacinia.
-
-%----------------------------------------------------------------------------------------
-%	MATERIALS AND METHODS
-%----------------------------------------------------------------------------------------
-
-%% Optional Materials and Methods Section
-%% The Materials and Methods section header will be added automatically.
-
-\begin{materials}
-Suspendisse viverra eleifend nulla at facilisis. Nullam eget tellus orci. Cras sit amet lorem velit. Maecenas rhoncus pellentesque orci eget vulputate. Phasellus massa nisi, mattis nec elementum accumsan, blandit non neque. In ac enim elit, sit amet luctus ante. Cras feugiat commodo lectus, vitae convallis dui sagittis id. In in tellus lacus, sed lobortis eros. Phasellus sit amet eleifend velit. Duis ornare dapibus porttitor. Maecenas eros velit, dignissim at egestas in, tincidunt lacinia erat. Proin elementum mi vel lectus suscipit fringilla. Mauris justo est, ullamcorper in rutrum interdum, accumsan eget mi. Maecenas ut massa aliquet purus eleifend vehicula in a nisi. Fusce molestie cursus lacinia.
-
-\begin{definition}
-A bounded function $\theta$ is a weak solution of QG if for any
-$\phi\,\epsilon\,
-C_0^{\infty}(\fdb\times\mathbb{R}\times[0,\vep])$ we have
-\begin{eqnarray}
-&&  \int_{\mathbb{R}^+\times\fd\times\mathbb{R}} \hspace{-25pt}
- \theta(x,y,t)\, \pr_t \phi
-\,(x,y,t) dy dx dt+\nonumber\\
-  & +&\int_{\mathbb{R}^+\times\fd\times\mathbb{R}}
-\hspace{-26pt} \theta\,(x,y,t) u(x,y,t)\cdot\nabla\phi\,(x,y,t)
-dydxdt = 0 \label{weaksol} \end{eqnarray}
-where $u$ is determined previously.
-\end{definition}
-
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris eu sapien nunc, sit amet accumsan dui. Nulla ac diam ut nunc placerat semper eget et libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras hendrerit ullamcorper sapien vitae luctus. Quisque vel diam massa. Vestibulum dui nibh, facilisis vel vestibulum eu, viverra in quam.
-
-\begin{theorem}
-If the active scalar $\theta$ satisfies
-the equation \eqref{weaksol}, then $\varphi$ satisfies the equation
-\begin{eqnarray}
-\mfrac{\pr \varphi}{\pr t}(x,t)&=&\hspace{-2pt}\dst
-\int_{\fd}\mfrac{\mfrac{\pr \varphi}{\pr x}(x,t)-\mfrac{\pr
-\varphi}{\pr
-u}(u,t)}{[(x-u)^{2}+(\varphi(x,t)-\varphi(u,t))^{2}]^{\f12}}\nonumber\\
-&&
-\chi(x-u,\varphi(x,t)-\varphi(u,t)) du \hspace{3pt} +
-\nonumber\\
-&+&\dst \int_{\fd} \Big{[}\mfrac{\pr \varphi} {\pr
-x}(x,t)-\mfrac{\pr \varphi}{\pr u} (u,t)\Big{]}
-\nonumber\\&&
-\eta(x-u,\varphi(x,t)-\varphi(u,t)) du + Error
-\end{eqnarray}
-with $|Error|\leq C\, \delta | log\delta| $ where $C$ depends only
-on $\|\theta\|_{L^{\infty}}$ and $\|
-\nabla\varphi\|_{L^{\infty}}$.
-\end{theorem}
-
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer accumsan ornare tortor at varius. Phasellus ullamcorper blandit dolor sit amet tempus. Curabitur ligula urna, ultrices in iaculis eu, eleifend vel urna. Praesent ullamcorper imperdiet purus, ut interdum sem interdum dictum. Proin euismod volutpat eros ac mattis. Quisque sit amet massa ac tortor cursus malesuada at vitae nisi. Nam quis neque et nunc vehicula cursus sit amet at tellus.
-\end{materials}
-
-%----------------------------------------------------------------------------------------
-%	APPENDICES (OPTIONAL)
-%----------------------------------------------------------------------------------------
-
-\appendix
-An appendix without a title.
-
-\appendix[Appendix title]
-An appendix with a title.
-
-%----------------------------------------------------------------------------------------
-%	ACKNOWLEDGEMENTS
-%----------------------------------------------------------------------------------------
-
-\begin{acknowledgments}
-This work was partially supported by a grant from the Spanish Ministry of Science and Technology.
-\end{acknowledgments}
-
-%----------------------------------------------------------------------------------------
-%	BIBLIOGRAPHY
-%----------------------------------------------------------------------------------------
-
-%% PNAS does not support submission of supporting .tex files such as BibTeX.
-%% Instead all references must be included in the article .tex document. 
-%% If you currently use BibTeX, your bibliography is formed because the 
-%% command \verb+\bibliography{}+ brings the <filename>.bbl file into your
-%% .tex document. To conform to PNAS requirements, copy the reference listings
-%% from your .bbl file and add them to the article .tex file, using the
-%% bibliography environment described above.  
-
-%%  Contact pnas@nas.edu if you need assistance with your
-%%  bibliography.
-
-% Sample bibliography item in PNAS format:
-%% \bibitem{in-text reference} comma-separated author names up to 5,
-%% for more than 5 authors use first author last name et al. (year published)
-%% article title  {\it Journal Name} volume #: start page-end page.
-%% ie,
-% \bibitem{Neuhaus} Neuhaus J-M, Sitcher L, Meins F, Jr, Boller T (1991) 
-% A short C-terminal sequence is necessary and sufficient for the
-% targeting of chitinases to the plant vacuole. 
-% {\it Proc Natl Acad Sci USA} 88:10362-10366.
-
-
-%% Enter the largest bibliography number in the facing curly brackets
-%% following \begin{thebibliography}
-
-\begin{thebibliography}{10}
-\bibitem{BN}
-M.~Belkin and P.~Niyogi, {\em Using manifold structure for partially
-  labelled classification}, Advances in NIPS, 15 (2003).
-
-\bibitem{BBG:EmbeddingRiemannianManifoldHeatKernel}
-P.~B\'erard, G.~Besson, and S.~Gallot, {\em Embedding {R}iemannian
-  manifolds by their heat kernel}, Geom. and Fun. Anal., 4 (1994),
-  pp.~374--398.
-
-\bibitem{CLAcha1}
-R.R.~Coifman and S.~Lafon, {\em Diffusion maps}, Appl. Comp. Harm. Anal.,
-  21 (2006), pp.~5--30.
-
-\bibitem{DiffusionPNAS}
-R.R.~Coifman, S.~Lafon, A.~Lee, M.~Maggioni, B.~Nadler, F.~Warner, and
-  S.~Zucker, {\em Geometric diffusions as a tool for harmonic analysis and
-  structure definition of data. {P}art {I}: Diffusion maps}, Proc. of Nat.
-  Acad. Sci.,  (2005), pp.~7426--7431.
-
-\bibitem{Clementi:LowDimensionaFreeEnergyLandscapesProteinFolding}
-P.~Das, M.~Moll, H.~Stamati, L.~Kavraki, and C.~Clementi, {\em
-  Low-dimensional, free-energy landscapes of protein-folding reactions by
-  nonlinear dimensionality reduction}, P.N.A.S., 103 (2006), pp.~9885--9890.
-
-\bibitem{DoGri}
-D.~Donoho and C.~Grimes, {\em Hessian eigenmaps: new locally linear
-  embedding techniques for high-dimensional data}, Proceedings of the National
-  Academy of Sciences, 100 (2003), pp.~5591--5596.
-
-\bibitem{DoGri:WhenDoesIsoMap}
-D.~L. Donoho and C.~Grimes, {\em When does isomap recover natural
-  parameterization of families of articulated images?}, Tech. Report Tech. Rep.
-  2002-27, Department of Statistics, Stanford University, August 2002.
-
-\bibitem{GruterWidman:GreenFunction}
-M.~Gr\"uter and K.-O. Widman, {\em The {G}reen function for uniformly
-  elliptic equations}, Man. Math., 37 (1982), pp.~303--342.
-
-\bibitem{Simon:NeumannEssentialSpectrum}
-R.~Hempel, L.~Seco, and B.~Simon, {\em The essential spectrum of neumann
-  laplacians on some bounded singular domains}, 1991.
-
-\bibitem{1}
-Kadison, R.\ V.\ and Singer, I.\ M.\ (1959)
-Extensions of pure states, {\it Amer.\ J.\ Math.\ \bf
-81}, 383-400.
-
-\bibitem{2}
-Anderson, J.\ (1981) A conjecture concerning the pure states of
-$B(H)$ and a related theorem. in {\it Topics in Modern Operator
-Theory}, Birkha\"user, pp.\ 27-43.
-
-\bibitem{3}
-Anderson, J.\ (1979) Extreme points in sets of
-positive linear maps on $B(H)$. {\it J.\ Funct.\
-Anal.\
-\bf 31}, 195-217.
-
-\bibitem{4}
-Anderson, J.\ (1979) Pathology in the Calkin algebra. {\it J.\
-Operator Theory \bf 2}, 159-167.
-
-\bibitem{5}
-Johnson, B.\ E.\ and Parrott, S.\ K.\ (1972) Operators commuting
-with a von Neumann algebra modulo the set of compact operators.
-{\it J.\ Funct.\ Anal.\ \bf 11}, 39-61.
-
-\bibitem{6}
-Akemann, C.\ and Weaver, N.\ (2004) Consistency of a
-counterexample to Naimark's problem. {\it Proc.\ Nat.\ Acad.\
-Sci.\ USA \bf 101}, 7522-7525.
-
-\bibitem{TSL}
-J.~Tenenbaum, V.~de~Silva, and J.~Langford, {\em A global geometric
-  framework for nonlinear dimensionality reduction}, Science, 290 (2000),
-  pp.~2319--2323.
-
-\bibitem{ZhaZha}
-Z.~Zhang and H.~Zha, {\em Principal manifolds and nonlinear dimension
-  reduction via local tangent space alignement}, Tech. Report CSE-02-019,
-  Department of computer science and engineering, Pennsylvania State
-  University, 2002.
-\end{thebibliography}
-
-%----------------------------------------------------------------------------------------
-
-\end{article}
-
-%----------------------------------------------------------------------------------------
-%	FIGURES AND TABLES
-%----------------------------------------------------------------------------------------
-
-%% Adding Figure and Table References
-%% Be sure to add figures and tables after \end{article}
-%% and before \end{document}
-
-%% For figures, put the caption below the illustration.
-%%
-%% \begin{figure}
-%% \caption{Almost Sharp Front}\label{afoto}
-%% \end{figure}
-
-\begin{figure}[h]
-\centerline{\includegraphics[width=0.4\linewidth]{placeholder.jpg}}
-\caption{Figure caption}\label{placeholder}
+\subsection{Received Data}
+~\ \\
+\textbf{1. Self-reported GPA and PSQI}
+\\ From November 22nd to December 4th, a questionnaires covering self-reported GPA and PSQI was posted online, and 117 students in CUHK(SZ) participated in the research with 91 answer sheets being eventually received. Collected and clustered data are shown as following
+\begin{figure}[htbp]
+	\centering
+	\subfigure{
+		\includegraphics[width=220pt]{q1.png}
+		\caption{Statistics of Self-reported GPA and PSQI}
+	}
 \end{figure}
-
-%% For Tables, put caption above table
-%%
-%% Table caption should start with a capital letter, continue with lower case
-%% and not have a period at the end
-%% Using @{\vrule height ?? depth ?? width0pt} in the tabular preamble will
-%% keep that much space between every line in the table.
-
-%% \begin{table}
-%% \caption{Repeat length of longer allele by age of onset class}
-%% \begin{tabular}{@{\vrule height 10.5pt depth4pt  width0pt}lrcccc}
-%% table text
-%% \end{tabular}
-%% \end{table}
-
-\begin{table}[h]
-\caption{Table caption}\label{sampletable}
-\begin{tabular}{l l l}
-\hline
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\hline
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\hline
-\end{tabular}
-\end{table}
-
-%% For two column figures and tables, use the following:
-
-%% \begin{figure*}
-%% \caption{Almost Sharp Front}\label{afoto}
-%% \end{figure*}
-
-%% \begin{table*}
-%% \caption{Repeat length of longer allele by age of onset class}
-%% \begin{tabular}{ccc}
-%% table text
-%% \end{tabular}
-%% \end{table*}
-
-%----------------------------------------------------------------------------------------
-
+\begin{figure}[htbp]
+	\centering
+	\subfigure{
+		\includegraphics[width=230pt]{q2.png}
+		\caption{Calculation of Correlation Coefficients between PSQI and Self-reported GPA}
+	}
+\end{figure}
+\begin{figure}[htbp]
+	\centering
+	\subfigure{
+		\includegraphics[width=220pt]{q3.png}
+		\caption{Calculation of Correlation Coefficients between PSQI Components and Self-reported GPA}
+	}
+\end{figure}
+ In November 27th, we handed out PSQI questionnaires in MAT-2040 in-class evaluation and collect the result are shown as following
+\begin{figure}[htbp]
+	\centering
+	\subfigure{
+		\includegraphics[width=220pt]{q4.png}
+		\caption{Statistics of In-class Evaluation Corrigendum and PSQI}
+	}
+\end{figure}
+\section{Discussion}
+From Fig 1 we can observe that when PSQI score increases, there is a significant growth in the proportion of GPA interval 3.4 - 3.7 and 3.7 - 4.0, and a notable decrease in the proportion of GPA interval 2.7 - 3.0.\par 
+After calculating the correlation coefficients for each GPA interval we obtain a table as Fig 2. From Fig 2 we can clearly conclude that PSQI score is positively correlated with higher self-reported GPA and negatively correlated with lower self-reported GPA, which indicates that better overall 
+\end{article}
 \end{document}
