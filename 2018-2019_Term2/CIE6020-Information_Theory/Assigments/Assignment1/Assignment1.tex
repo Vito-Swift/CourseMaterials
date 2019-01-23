@@ -128,13 +128,36 @@
 			
 			\draw (-1,2) -- (-2,3);
 			\draw (6.5,2) -- (7.5,3);
+			\draw (2.75,1) -- (2.75,3.5);
+			\draw (0.5,-3) -- (2.5, -4);
+			\draw (5.5, -3) -- (3.5, -4);
 			
-			\node at (-2, 3.4) {\LARGE\textbf{H(X|Y)}};
-			\node at (7.5, 3.4) {\LARGE\textbf{H(Y|X)}};
-			\node at (0.5,0) {\LARGE\textbf{H(X)}};
-			\node at (5,0) {\LARGE\textbf{H(Y)}};
-			
-			
+			\node at (-2, 3.4) {\LARGE\textbf{$H(X\mid Y)$}};
+			\node at (7.5, 3.4) {\LARGE\textbf{$H(Y\mid X)$}};
+			\node at (0.5,0) {\LARGE\textbf{$H(X)$}};
+			\node at (5,0) {\LARGE\textbf{$H(Y)$}};
+			\node at (2.75, 3.6) {\LARGE\textbf{$I(X;Y)$}};
+			\node at (3, -4.4) {\LARGE\textbf{$H(X,Y)$}};
 		\end{scope}
 	\end{tikzpicture}
+	\\
+	7. \textit{Chain rule for conditional entropy.} Show that 
+	\begin{align*}
+		H(X_1,X_2,...,X_n\mid Y) = \sum_{i=1}^{n}H(X_i\mid X_1,...,X_{i-1},Y)
+	\end{align*}
+	\textbf{Proof:} From the \textit{Chain rule for entropy}, we have
+	\begin{align*}
+		H(X_1,X_2,...,X_n) = \sum_{i=1}^{n}H(X_i\mid X_1,...,X_{i-1})
+	\end{align*}
+	then for conditional entropy
+	\begin{align*}
+		H(X_1,X_2,...,X_n\mid Y)  &= \sum_{y\in\mathcal{Y}}p(y)H(X_1,...,X_n\mid Y=y) \\
+								  &= \sum_{y\in\mathcal{Y}}p(y)\sum_{i=1}^{n}H(X_i\mid X_1,...,X_{i-1}, Y=y) \\
+								  &= \sum_{i=1}^{n}H(X_i\mid X_1,...,X_{i-1},Y)\\
+	\end{align*}
+	8. \textit{Entropy of a sum.} Let X and Y be random variables that take on values $x_1,x_2,...,x_r$ and $y_1,y_2,...,y_s$, respectively. Let $Z = X + Y$.\par 
+	(a) Show that $H(Z|X) = H(Y|X)$. Argue that if $X$, $Y$ are independent, then $H(Y) \leq H(Z)$ and $H(X) \leq H(Z)$. Thus, the addition of \textit{independent} random variable adds uncertainty. \par 
+	(b) Give an example of (necessarily dependent) random variables in which $H(X) > H(Z)$ and $H(Y) > H(Z)$. \par 
+	(c) Under what conditions does $H(Z) = H(X) + H(Y)$? \\
+	
 \end{document}
