@@ -159,5 +159,47 @@
 	(a) Show that $H(Z|X) = H(Y|X)$. Argue that if $X$, $Y$ are independent, then $H(Y) \leq H(Z)$ and $H(X) \leq H(Z)$. Thus, the addition of \textit{independent} random variable adds uncertainty. \par 
 	(b) Give an example of (necessarily dependent) random variables in which $H(X) > H(Z)$ and $H(Y) > H(Z)$. \par 
 	(c) Under what conditions does $H(Z) = H(X) + H(Y)$? \\
-	
+	\textbf{Proof:} \\
+	(a) 
+	\begin{align*}
+		H(Z|X) &= -\sum_{x\in\mathcal{X}}p(x)H(Z|X=x) \\
+			   &= -\sum_{x\in\mathcal{X}}p(x)\sum_{y\in\mathcal{Y}}p_Y(z-x)\log(p_Y(z-x)) \\
+			   &= -\sum_{x\in\mathcal{X}}p(x)\sum_{y\in\mathcal{Y}}p_Y(y)\log(p_Y(y)) \\
+			   &= H(Y|X)	
+	\end{align*}
+	If $X$ and $Y$ are independent, then
+	\begin{align*}
+		H(Y|X) &= -\sum_{x\in\mathcal{X}}p(x)\sum_{y\in\mathcal{Y}}p(y)\log p(y) \\
+		       &= H(Y) \\
+		H(Z|X) &= -\sum_{x\in\mathcal{X}}p(x)\sum_{z\in\mathcal{Z}}p(z|X=x)\log(p(z|X=x)) \\
+			   &\leq -\sum_{x\in\mathcal{X}}p(x)\sum_{z\in\mathcal{Z}}p(z)\log(p(z)) \\
+			   &= H(Z) 	       
+	\end{align*}
+	From the equivalence proved above, we have $H(Y) = H(Y|X) = H(Z|X) \leq H(Z)$ \\
+	And also $H(X) \leq H(Z)$ \\
+	(b) Flip a coin, if the result is head then let X = 1, if the result is tail then let X = 0. For the random variable Y, Y follows following rules: if X = 1 then let Y = 0, if X = 0 then let Y = 1. \\
+	Then, we can calculate that $H(X) = 1$, $H(Y) = 1$, $H(Z) = H(X+Y) = 0$, which meas conditions above give an example of random variables in which $H(X) > H(Z)$ and $H(Y) > H(Z)$. \\
+	(c) If the equality holds, then from \textit{chain rule of entropy}, we can obtain that 
+	\begin{align*}
+		&\quad H(X,Y,Z) = H(Z) + H(X,Y|Z) \\
+		&\rightarrow H(X,Y,Z) = H(X) + H(Y) + H(X,Y|Z) 
+	\end{align*}
+	from here intuitively we can obtain that $X$ and $Y$ are independent, and $H(Z) = (H(X)\cup H(Y))$.\\
+	\textbf{claim:} If (1):$X$ and $Y$ are independent, (2):$H(Z|X) = I(Z;Y)$ and (3):$H(Z|Y) = I(Z;X)$, then $H(Z) = H(X) + H(Y)$ \\
+	From (1) it can be obtained that 
+	\begin{align*}
+		H(X,Y) = H(X) + H(Y)
+	\end{align*}
+	And from (2) and (3) it can be derived that 
+	\begin{align*}
+		&\quad H(Z|X) = I(Z;Y) \\
+		&\rightarrow H(Z|X) = H(Z)+H(Y)-H(Z,Y)  \\
+		&\rightarrow H(Z) = H(X,Z)+H(Y,Z)-H(X)-H(Y) 
+	\end{align*}
+	where
+	\begin{align*}
+		H(X,Z)+H(Y,Z) &= 2H(Z)+H(X)+H(Y)-I(X;Z)-I(Y;Z)\\
+		              &= 2[H(X)+H(Y)]
+	\end{align*} 
+	Hence, $H(Z) = H(X) + H(Y)$. 
 \end{document}
