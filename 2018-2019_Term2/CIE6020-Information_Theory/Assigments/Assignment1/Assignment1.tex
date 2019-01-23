@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+\usepackage{indentfirst}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{amsmath}
+
+\setlength{\parindent}{20pt}
+\setlength{\oddsidemargin}{0.25cm}
+\setlength{\evensidemargin}{0.25cm}
+\setlength{\marginparsep}{0.5cm}
+\setlength{\marginparwidth}{1.5cm}
+\setlength{\textwidth}{160mm}
+\renewcommand{\baselinestretch}{1.5}
+
+\author{WU, Chenhao  117010285}
+\title{CIE 6020 Assignment 1}
+\date{January 25, 2019}
+
+\begin{document}
+	\maketitle
+	\par
+	1. If the base of the logarithm is $b$, we denote the entropy as $H_b(X)$. Show that $H_b(X) = (\log_ba)H_a(X)$. \\
+	\textbf{Proof:} 
+	\begin{align*}
+		(\log_ba)H_a(X) &= (\log_ba)\sum_{x\in\mathcal{X}} p(x)\log_a p(x) \\
+		&= \sum_{x\in\mathcal{X}}p(x)(\log_ba)\log_ap(x) \\
+		&= \sum_{x\in\mathcal{X}}p(x)(\log_ba^{\log_ap(x)}) \\
+		&= \sum_{x\in\mathcal{X}}p(x)\log_bp(x) \\
+		&= H_b(X)
+	\end{align*}\\
+	\par 
+	2. \textit{Coin flips.} A fair coin is flipper until the first head occurs. Let $X$ denote the number of flips required. \par 
+	(a) Find the entropy $H(X)$ in bits. The following expressions may be useful:$$ \sum_{n=0}^{\infty}r^n = \frac{1}{1-r}$$ $$\sum_{n=0}^{\infty}nr^n = \frac{r}{(1-r)^2}$$ \par 
+	(b) A random variable $X$ is drawn according to this distribution. Find an "efficient" sequence of yes-no questions of the form, "Is X contained in the set S?" Compare $H(X)$ to the expected number of questions required to determine X. \\
+	\textbf{Answer:} \\
+	(a): The probability mass function of X: $p_X(n) = P(X=n) = (\frac{1}{2})^{n-1}\frac{1}{2} = (\frac{1}{2})^n $
+	\begin{align*}
+		H(X) &= -\sum_{i=1}^{\infty} (\frac{1}{2})^i \log(\frac{1}{2}^i) \\
+		     &= -\sum_{i=1}^{\infty} (\frac{1}{2})^ii\log(\frac{1}{2}) \\
+		     &= \sum_{i=1}^{\infty} i(\frac{1}{2})^i \\
+		     &= 2
+	\end{align*}
+	(b): Since the pmf of X is exponentially decreasing, one of the reasonable questions for nth question is "Is X = n?". Let Y denote the number of questions need to ask to determine the exact number of flips, then the probability mass function of Y can be given by $$p_Y(n) = P(X = n|X \geq n) = (1-\sum_{i = 1}^{n-1}p(x))(\frac{1}{2})^n = (\frac{1}{2})^n$$
+	and therefore, the expectation of Y can by given by 
+	\begin{align*}
+		E[Y] &= \sum_{i=1}^{\infty}ip_Y(i) \\
+			 &= 2 \\
+			 &= H(X) 
+	\end{align*}
+	From the equivalence of $E[Y]$ and $H(X)$ we can infer that this sequence of questions are optimal, since it can be proved that each nth question can get 1 bit information from the set of all possible solutions.\\
+	\par 
+	3. \textit{Entropy of functions.} Let X be a random variable taking on a finite number of values. What is the (general) inequality relationship of $H(X)$ and $H(Y)$ if \par 
+	(a) $Y = 2^X$? \par 
+	(b) $Y = cos(X)$? \\
+	\textbf{Answer:} \\
+	(a) Suppose that x's alphabet $\mathcal{X} = (x_1,x_2,...,x_m)$ and y's alphabet $\mathcal{Y} = (y_1,y_2,...,y_n)$  \par 
+		For $Y = f(X) = 2^X$, $f:\mathcal{X}\mapsto\mathcal{Y}$ is a one-to-one mapping, and therefore by definition
+		\begin{align*}
+			H(X) &= -\sum_{x\in\mathcal{X}}p(x)\log p(x) \\
+			     &= -\sum_{y}\sum_{x:f(x)=y}p(x)\log p(x) \\
+			     &= -\sum_{y\in\mathcal{Y}}p(y)\log p(y) \\
+			     &= H(Y)
+		\end{align*}
+	(b) Suppose that x's alphabet $\mathcal{X} = (x_1,x_2,...,x_m)$ and y's alphabet $\mathcal{Y} = (y_1,y_2,...,y_n)$  \par 
+		Intuitively, for $Y = f(X) = cos(X)$, $f:\mathcal{X}\mapsto\mathcal{Y}$ is surjective but not injective \par 
+		\begin{align*}
+			H(X) &= -\sum_{x\in\mathcal{X}}p(x)\log p(x) \\
+			     &= -\sum_{y}\sum_{x:f(x)=y}p(x)\log p(x) \\
+			     &> -\sum_{y}\sum_{x:f(x)=y}p(x)\log p(y) \\
+			     &= -\sum_{y}p(y)\log p(y) \\
+			     &= H(Y)
+		\end{align*}  
+		Therefore, $H(X) > H(Y)$ for $Y = cos(X)$ \\
+		\par 
+	4. What is the minimum value of $H(p_1,...,p_n) = H(\textbf{p})$ as \textbf{p} ranges over the set of n-dimensional probability vectors? Find all \textbf{p}'s that achieve this minimum \\
+	\textbf{Answer:} The entropy of \textbf{p} is given by
+	\begin{align*}
+		H(\textbf{p}) &= \sum_{i=1}^{n}p_i\log p_i \\
+					  &= \sum_{i=1}^{n}p_i\log\frac{p_i}{1} \\
+					  &\geq (\sum_{i=1}^{n}p_i) \log \frac{\sum_{i=1}^{n}p_i}{n}
+	\end{align*}
+	Notice that $\sum_{i=1}^{n}p_i=1$, and therefore $H(\textbf{p}) \geq \log\frac{1}{n}$ with the equality being held iff $p_in = 1$ 
+	\par 
+	5. Let $X$ be a discrete random variable. Show that the entropy of a function of $X$ is less than or equal to the entropy of $X$, i.e., $H(g(X)) \leq H(X)$. \\
+	\textbf{Proof:}
+	
+	
+\end{document}
