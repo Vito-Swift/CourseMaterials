@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: mplkit
+Version: 0.6
+Summary: A collection of tools that sit on top of matplotlib that allow one to consistently format plots.
+Home-page: http://github.com/matthewwardrop/python-mplkit
+Author: Matthew Wardrop
+Author-email: mister.wardrop@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
