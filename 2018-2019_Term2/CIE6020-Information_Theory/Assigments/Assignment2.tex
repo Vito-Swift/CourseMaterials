@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage{indentfirst}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{tikz}
+
+\setlength{\parindent}{20pt}
+\setlength{\oddsidemargin}{0.25cm}
+\setlength{\evensidemargin}{0.25cm}
+\setlength{\marginparsep}{0.5cm}
+\setlength{\marginparwidth}{1.5cm}
+\setlength{\textwidth}{160mm}
+\renewcommand{\baselinestretch}{1.5}
+
+\author{WU, Chenhao  117010285}
+\title{CIE 6020 Assignment 2}
+\date{February 18, 2019}
+
+\begin{document}
+	\maketitle
+	\par
+	1. Let X, Y, Z be three random variables with a joint probability mass function $p(x,y,z)$. The relative entropy between the joint distribution and the product of the marginal is 
+	\begin{align*}
+		D(p(x,y,z){\mid}{\mid}p(x)p(y)p(z)) = E[\log\frac{p(x,y,z)}{p(x)p(y)p(z)}]
+	\end{align*}
+	Expand this in terms of entropies. When is this quantity zero?\\
+	\textbf{Answer} 
+	\begin{align*}
+		E[log\frac{p(x,y,z)}{p(x)p(y)p(z)}] &= \sum_{z\in\mathcal{Z}}p(z)\sum_{y\in\mathcal{Y}}p(y\mid{z})\sum_{x\in\mathcal{X}}p(x\mid{y,z})\log\frac{p(x,y,z)}{p(x)p(y)p(z)} \\
+		&= \sum_{z\in\mathcal{Z}}p(z)\sum_{y\in\mathcal{Y}}p(y\mid{z})\sum_{x\in\mathcal{X}}p(x\mid{y,z})[\log{p(x,y,z)}-\log{p(x)p(y)p(z)}] \\
+		&= 
+	\end{align*}
+\end{document}

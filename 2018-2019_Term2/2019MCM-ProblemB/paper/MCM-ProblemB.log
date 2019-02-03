@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.15)  29 JAN 2019 02:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.15)  29 JAN 2019 03:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1522,7 +1522,7 @@ File: /home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/20
 Package pdftex.def Info: /home/vitowu/Documents/CourseMaterials/CourseMaterials
 /2018-2019_Term2/2019MCM-ProblemB/paper/container_2.png  used on input line 255
 .
-(pdftex.def)             Requested size: 349.97853pt x 192.05493pt.
+(pdftex.def)             Requested size: 349.97853pt x 183.51228pt.
 
 Overfull \hbox (43.13419pt too wide) in paragraph at lines 258--258
 []\OT1/cmr/m/n/12 Figure 2: [] 
@@ -1539,7 +1539,7 @@ File: /home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/20
 Package pdftex.def Info: /home/vitowu/Documents/CourseMaterials/CourseMaterials
 /2018-2019_Term2/2019MCM-ProblemB/paper/container_3.png  used on input line 265
 .
-(pdftex.def)             Requested size: 349.97853pt x 192.05493pt.
+(pdftex.def)             Requested size: 349.97853pt x 183.51228pt.
 
 Overfull \hbox (37.06468pt too wide) in paragraph at lines 268--268
 []\OT1/cmr/m/n/12 Figure 3: [] 
@@ -1569,34 +1569,34 @@ File: /home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/20
 9MCM-ProblemB/paper/container_conf1.png>
 Package pdftex.def Info: /home/vitowu/Documents/CourseMaterials/CourseMaterials
 /2018-2019_Term2/2019MCM-ProblemB/paper/container_conf1.png  used on input line
- 295.
+ 292.
 (pdftex.def)             Requested size: 320.10075pt x 213.39397pt.
- [14]
 </home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/2019MCM
--ProblemB/paper/container_conf3.png, id=91, 891.33pt x 839.135pt>
+-ProblemB/paper/container_conf3.png, id=88, 891.33pt x 839.135pt>
 File: /home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/20
 19MCM-ProblemB/paper/container_conf3.png Graphic file (type png)
 <use /home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/201
 9MCM-ProblemB/paper/container_conf3.png>
 Package pdftex.def Info: /home/vitowu/Documents/CourseMaterials/CourseMaterials
 /2018-2019_Term2/2019MCM-ProblemB/paper/container_conf3.png  used on input line
- 304.
+ 301.
 (pdftex.def)             Requested size: 320.08972pt x 213.394pt.
+ [14 </home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/20
+19MCM-ProblemB/paper/container_conf1.png>]
 </home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/2019MCM
--ProblemB/paper/container_conf2.png, id=92, 875.27pt x 834.11626pt>
+-ProblemB/paper/container_conf2.png, id=93, 875.27pt x 834.11626pt>
 File: /home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/20
 19MCM-ProblemB/paper/container_conf2.png Graphic file (type png)
 <use /home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/201
 9MCM-ProblemB/paper/container_conf2.png>
 Package pdftex.def Info: /home/vitowu/Documents/CourseMaterials/CourseMaterials
 /2018-2019_Term2/2019MCM-ProblemB/paper/container_conf2.png  used on input line
- 313.
+ 310.
 (pdftex.def)             Requested size: 320.09192pt x 213.39049pt.
  [15 </home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/20
-19MCM-ProblemB/paper/container_conf1.png> </home/vitowu/Documents/CourseMateria
-ls/CourseMaterials/2018-2019_Term2/2019MCM-ProblemB/paper/container_conf3.png>]
- [16 </home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/20
-19MCM-ProblemB/paper/container_conf2.png>] [17] (./MCM-ProblemB.aux) ) 
+19MCM-ProblemB/paper/container_conf3.png> </home/vitowu/Documents/CourseMateria
+ls/CourseMaterials/2018-2019_Term2/2019MCM-ProblemB/paper/container_conf2.png>]
+ [16] [17] [18] (./MCM-ProblemB.aux) ) 
 Here is how much of TeX's memory you used:
  33350 strings out of 494847
  827189 string characters out of 6179079
@@ -1605,22 +1605,22 @@ Here is how much of TeX's memory you used:
  537665 words of font info for 48 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  62i,15n,96p,10384b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on MCM-ProblemB.pdf (18 pages, 1925872 bytes).
+</usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on MCM-ProblemB.pdf (19 pages, 1926190 bytes).
 PDF statistics:
- 144 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
+ 148 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  98 words of extra memory for PDF output out of 10000 (max. 10000000)
 

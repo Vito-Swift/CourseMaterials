@@ -31,7 +31,7 @@
 			~\\
 			\textbf{Abstract} 
 		\end{center}
-		The hurricane Maria hit Puerto Rico in 2017 and created great damages on the island. To help the government with disaster assistance, HELP, Inc. is attempting to send a drone fleet to the affected area. The fleet will be able to perform two missions—medical supply and video reconnaissance. This paper tries to make a detailed plan for HELP, Inc. to conduct this disaster operation, including drone fleet configuration and flight route plan. Careful analysis implies that the problem is similar to the Vehicle Routing Problem (VRP) and the Traveling Salesman Problem (TSP). Current studies give solutions to these problems only when most of the needed conditions are determined, for example, where the vehicles leave or what set of cargo is needed to transport. However, most of the things needed to make a plan remain unknown in this problem. Therefore, what kind of set of drones and medical packages to choose, where to launch them and the how to make a flight plan rely on each other. We found an appropriate solution has not been provided by current studies yet. In view of these difficulties, we take the specification of cargoes and their relationship with selection of drones into consideration. We utilized the specifications of cargoes and applied optimization methods in an integrated approach. Our model also considered the decrease of drones' flight time while carrying cargoes. The results shows that the model we proposed can provide 89 days medical supports in maximum. It provides a highly optimized plan for HELP, Inc.
+		The hurricane Maria hit Puerto Rico in 2017 and created great damages on the island. To help the government with disaster assistance, HELP, Inc. is attempting to send a drone fleet to the affected area. The fleet will be able to perform two missions—medical supply and video reconnaissance. This paper tries to make a detailed plan for HELP, Inc. to conduct this disaster operation, including drone fleet configuration and flight route plan. Careful analysis implies that the problem is similar to the Vehicle Routing Problem (VRP) and the Traveling Salesman Problem (TSP). Current studies give solutions to these problems only when most of the needed conditions are determined, for example, where the vehicles leave or what set of cargo is needed to transport. However, most of the things needed to make a plan remain unknown in this problem. Therefore, what kind of set of drones and medical packages to choose, where to launch them and the how to make a flight plan rely on each other. We found an appropriate solution has not been provided by current studies yet. In view of these difficulties, we take the specification of cargoes and their relationship with selection of drones into consideration. We utilized the specifications of cargoes and applied optimization methods in an integrated approach. Our model also considered the decrease of drones' flight time while carrying cargoes. The results shows that the model we proposed can provide 121 days medical supports in maximum. It provides a highly optimized plan for HELP, Inc.
 		\vspace*{\stretch{1}}
 	\end{titlepage}
 	
@@ -252,7 +252,7 @@
 		\begin{figure}[H]
 			\centering
 			\subfigure{}{
-				\includegraphics[width=0.82\textwidth, height=0.45\linewidth]{/home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/2019MCM-ProblemB/paper/container_2.png}
+				\includegraphics[width=0.82\textwidth, height=0.43\linewidth]{/home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/2019MCM-ProblemB/paper/container_2.png}
 			}
 			\caption[Simulation Result - Location of Container 2]
 					{\tabular[t]{@{}l@{}}Simulation Result - Location of Container 1 \\ Fitting Surface: $f(x, y) =	-498.549 x +  4.921 y +  72.195 xy -0.27179 x^2  -0.0007 y^2$\endtabular}
@@ -262,13 +262,13 @@
 		\begin{figure}[H]
 			\centering
 			\subfigure{}{
-				\includegraphics[width=0.82\textwidth, height=0.45\linewidth]{/home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/2019MCM-ProblemB/paper/container_3.png}
+				\includegraphics[width=0.82\textwidth, height=0.43\linewidth]{/home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/2019MCM-ProblemB/paper/container_3.png}
 			}
 			\caption[Simulation Result - Location of Container 3]	
 					{\tabular[t]{@{}l@{}}Simulation Result - Location of Container 3 \\ Fitting Surface: $f(x, y) = -194.076 x +  8.613 y +  52.329xy- 0.4063 x^2+0.0084 y^2$\endtabular}
 		\end{figure}
 			
-		From the regression plots we obtain that best three location to place the containers are: (18.36, -66.9), (18.37, -65.93) and (18.40, -66.01). The configurations of containers are listed in \textbf{Appendix}. In the simulation, the best result our model can get in average number of days are 87 in maximum.\par 
+		From the regression plots we obtain that best three location to place the containers are: (18.36, -66.9), (18.37, -65.93) and (18.40, -66.01). The configurations of containers are listed in \textbf{Appendix}. In the simulation, the best result our model can get in average number of days are 121 in maximum.\par 
 		Following map shows the exact location of three containers, in which the red marker denotes the first container, the yellow marker denotes the second container and the green marker denotes the last container.
 		\begin{figure}[H]
 			\centering
@@ -278,14 +278,11 @@
 		\end{figure}
 	
 	\section{Conclusion}
-	In this paper, we provide models for cargo problem, drone flying strategy and the supply drop location. The cargo problem can be solved using dynamic optimization. The drone flying strategy and the container drop problem is the main problem in this paper. By using searching algorithm, dynamic programming, specifications of given cargoes and the consumption and geographical location of each hospital, we manage to find out the optimal solution under the preliminaries. The expected number of days that Puerto Rico can receive medical packages is 89 days, which is approximately to 3 months. According to media reports of Puerto Rico, over 90\% of main roads and infrastructures had been restored after 4 months, which validate our model as a reasonable model with compatibility to the real scenario. \par 
+	In this paper, we provide models for cargo problem, drone flying strategy and the supply drop location. The cargo problem can be solved using dynamic optimization. The drone flying strategy and the container drop problem is the main problem in this paper. By using searching algorithm, dynamic programming, specifications of given cargoes and the consumption and geographical location of each hospital, we manage to find out the optimal solution under the preliminaries. The expected number of days that Puerto Rico can receive medical packages is 121 days, which is approximately to 4 months. According to media reports of Puerto Rico, over 90\% of main roads and infrastructures had been restored after 4 months, which validate our model as a reasonable model with compatibility to the real scenario. \par 
 	
 	However, our model gives little concern to the route discovering problem, which might also be very important in reality. Also, the model requires lots of power to finish its computation, which indicates that the model can be simplified.
-
-	\section{Appendix. Memo for HELP, Inc}
-	Our model gives 3-months medical support to Puerto Rico medical centers in maximum, and we have gives our solutions on how to pack the containers, where to settle the containers and how to route the drone. \par 
-	However, the expectation of our model can achieved only if our assumptions in section \textbf{1.3} have been satisfied. Therefore, if you help us to meet our preliminary assumptions, we will sincerely appreciate it. \par 
 	
+	\newpage
 	\section{Appendix. Container Configurations}	
 	Here are optimal configurations we got from our model. \par 
 	As what being proposed in section \textbf{1.5.1}, the optimal route of drones can be conclude from the saving algorithms if the configuration of container have been determined. Therefore, the route of drones are not necessary to be enumerated since we have given the exact container configurations. 
@@ -315,6 +312,12 @@
 		\caption{Simulation Result - Configuration of Container 3}
 	\end{figure}
 	
+	\newpage
+	\section{Appendix. Memo for HELP, Inc}
+	Our model gives 4-months medical support to Puerto Rico medical centers in maximum, and we gave our solutions on how to pack the containers, where to settle the containers and how to route the drone. \par 
+	However, the expectation of our model can achieved only if our assumptions in section \textbf{1.3} have been satisfied. Therefore, if you help us to meet our preliminary assumptions, we will sincerely appreciate it. \par 
+	
+	\newpage
 	\section{Appendix. Reference}
 	\begin{thebibliography}{10}
 		\bibitem{1}

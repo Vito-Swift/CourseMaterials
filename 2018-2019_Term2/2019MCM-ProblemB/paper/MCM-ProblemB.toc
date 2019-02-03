@@ -20,6 +20,6 @@
 \contentsline {subsection}{\numberline {2.3}Searching Simulation}{11}
 \contentsline {subsection}{\numberline {2.4}Results of Simulation}{11}
 \contentsline {section}{\numberline {3}Conclusion}{13}
-\contentsline {section}{\numberline {4}Appendix. Memo for HELP, Inc}{14}
-\contentsline {section}{\numberline {5}Appendix. Container Configurations}{14}
-\contentsline {section}{\numberline {6}Appendix. Reference}{16}
+\contentsline {section}{\numberline {4}Appendix. Container Configurations}{14}
+\contentsline {section}{\numberline {5}Appendix. Memo for HELP, Inc}{16}
+\contentsline {section}{\numberline {6}Appendix. Reference}{17}
