@@ -33,4 +33,53 @@
 		&= \sum_{z\in\mathcal{Z}}p(z)\sum_{y\in\mathcal{Y}}p(y\mid{z})\sum_{x\in\mathcal{X}}p(x\mid{y,z})[\log{p(x,y,z)}-\log{p(x)p(y)p(z)}] \\
 		&= 
 	\end{align*}
+	
+	\par
+	2. Let the random variable $X$ have three possible outcomes {$a,b,c$}. Consider two distributions on this random variable:
+	\begin{table}[H]
+		\centering
+		\makebox[\linewidth]{
+			\begin{tabular}{|c|c|c|}
+				\hline 
+				symbol & $p(x)$ & $p(y)$ \\ \hline
+				a & $\frac{1}{2}$ & $\frac{1}{3}$ \\ \hline 
+				b & $\frac{1}{4}$ & $\frac{1}{3}$ \\ \hline 
+				c & $\frac{1}{4}$ & $\frac{1}{3}$ \\ \hline
+			\end{tabular}
+		}
+	\end{table}
+	Calculate $H(p)$, $H(q)$, $D(p{\mid\mid}q)$ and $D(q{\mid\mid}p)$. Verify that in this case, $D(p{\mid\mid}q)\not=D(q{\mid\mid}p)$ \\
+	\textbf{Answer}
+	\begin{align*}
+		&H(p) = -(\frac{1}{2}\log\frac{1}{2} + \frac{1}{4}\log\frac{1}{4} + \frac{1}{4}\log\frac{1}{4}) = \frac{3}{2} \\
+		&H(q) = -(\frac{1}{3}\log\frac{1}{3} + \frac{1}{3}\log\frac{1}{3} + \frac{1}{3}\log\frac{1}{3}) = \log3 \\
+		&D(p{\mid\mid}q) = \frac{1}{2}\log\frac{\frac{1}{2}}{\frac{1}{3}} + \frac{1}{4}\log\frac{\frac{1}{4}}{\frac{1}{3}} + \frac{1}{4}\log\frac{\frac{1}{4}}{\frac{1}{3}} = \log3 - \frac{3}{2} \\
+		&D(q{\mid\mid}p) = \frac{1}{3}\log\frac{\frac{1}{3}}{\frac{1}{2}} + \frac{1}{3}\log\frac{\frac{1}{3}}{\frac{1}{4}} + \frac{1}{3}\log\frac{\frac{1}{3}}{\frac{1}{4}} = -\log3+\frac{5}{3}
+	\end{align*}
+	
+	\par
+	3. Show that $lnx\geq1-\frac{1}{x}$ for $x>0$, where the equality holds when $x=1$. \\
+	\textbf{Proof} \\
+	Let $f(x) = \ln x + \frac{1}{x} - 1$, and $f(1) = 0$. \\
+	The derivative of $f(x)$ is $\frac{d}{dx}f(x) = \frac{1}{x}-\frac{1}{x^2}$. \\
+	\textbf{(1).}When 
+	
+	\par
+	4. \textit{Conditioning reduces entropy.} Show that $H(Y{\mid}X) \leq H(Y)$ with equality iff X and Y are independent.
+	
+	\par 
+	5. Show that $I(X;Y{\mid}Z)\geq0$ with equality iff $X\rightarrow Z\rightarrow Y$.  
+	
+	\par 
+	6. \textit{Data processing.} Let $X_1\rightarrow X_2\rightarrow X_3\rightarrow ... \rightarrow X_n$ form a Markov chain, i.e., 
+	\begin{align*}
+		p(x_1,x_2,...,x_n) &= p(x_1)p(x_2{\mid}x_1)...p(x_n{\mid}x_{n-1})
+	\end{align*}
+	Reduce $I(X_1;X_2,...,X_n)$ to its simplest form.
+	
+	\par 
+	7. Let $X$ and $Y$ be two random variables and let $Z$ be independent of $(X,Y)$. Show that $I(X;Y)\geq I(X;g(Y,Z))$ for any function $g$.
+	
+	\par 
+	8. \textit{Bottleneck.} Suppose that a (non-stationary) Markov chain starts in one of $n$ states, necks down to $k<n$ states, and then fans back to $m>k$ states. Thus $X_1\rightarrow X_2\rightarrow X_3$, that is, $p(x_1,x_2,x_3) = p(x_1)p(x_2{\mid}x_1)p(x_3{\mid}x_2)$, for all $x_1\in\{1,2,...,n\}$, $x_2\in\{1,2,...,k\}$, $x_3\in\{1,2,...,m\}$
 \end{document}

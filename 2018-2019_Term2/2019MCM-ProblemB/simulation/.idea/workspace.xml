@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f43c1ec-fa19-4f64-8225-aea4739d2358" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../2018-2019_Term1/PHY1002-Physics_Laboratory/e3/.report.tex.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../paper/MCM-ProblemB.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../paper/MCM-ProblemB.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../paper/MCM-ProblemB.log" beforeDir="false" afterPath="$PROJECT_DIR$/../paper/MCM-ProblemB.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../paper/MCM-ProblemB.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../paper/MCM-ProblemB.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../paper/MCM-ProblemB.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../paper/MCM-ProblemB.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../paper/MCM-ProblemB.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../paper/MCM-ProblemB.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../paper/MCM-ProblemB.toc" beforeDir="false" afterPath="$PROJECT_DIR$/../paper/MCM-ProblemB.toc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fitting.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitting.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,10 +20,12 @@
     <session id="117216019">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -46,14 +42,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="10992" />
+          <entry key="py" value="10995" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="10992" />
+          <entry key="Python" value="10995" />
         </counts>
       </usages-collector>
     </session>
@@ -76,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/fitting.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
-              <caret line="10" column="120" lean-forward="true" selection-start-line="10" selection-start-column="120" selection-end-line="10" selection-end-column="120" />
+              <caret line="10" column="123" selection-start-line="10" selection-start-column="123" selection-end-line="10" selection-end-column="123" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -192,6 +188,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -208,7 +205,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -279,6 +275,9 @@
       <module name="simulation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -322,7 +321,7 @@
     <frame x="0" y="31" width="1920" height="1049" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13022508" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1318328" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -337,13 +336,13 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50039905" side_tool="true" weight="0.3298969" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49960095" weight="0.3298969" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.49920192" visible="true" weight="0.25194228" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.49920192" visible="true" weight="0.25971144" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.49851632" visible="true" weight="0.312433" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.49775112" visible="true" weight="0.312433" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" x="0" y="0" width="590" height="1209" id="Documentation" order="5" sideWeight="0.5014837" side_tool="true" visible="true" weight="0.312433" />
+      <window_info anchor="right" x="0" y="0" width="590" height="1209" id="Documentation" order="5" sideWeight="0.5022489" side_tool="true" visible="true" weight="0.312433" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,7 +419,7 @@
     <entry file="file://$PROJECT_DIR$/fitting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="10" column="120" lean-forward="true" selection-start-line="10" selection-start-column="120" selection-end-line="10" selection-end-column="120" />
+          <caret line="10" column="123" selection-start-line="10" selection-start-column="123" selection-end-line="10" selection-end-column="123" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
