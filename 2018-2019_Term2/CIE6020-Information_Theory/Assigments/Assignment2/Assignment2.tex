@@ -27,7 +27,7 @@
 		D(p(x,y,z){\mid}{\mid}p(x)p(y)p(z)) = E[\log\frac{p(x,y,z)}{p(x)p(y)p(z)}]
 	\end{align*}
 	Expand this in terms of entropies. When is this quantity zero?\\
-	\textbf{Answer} 
+	\textbf{Answer:} 
 	\begin{align*}
 		E[\log\frac{p(x,y,z)}{p(x)p(y)p(z)}] &= E[\log p(x,y,z) - \log p(x) - \log p(y) - \log p(z)] \\
 								             &= E[\log p(x,y,z)] - E[\log p(x)] - E[\log p(y)] - E[\log p(z)] \\
@@ -51,7 +51,7 @@
 		}
 	\end{table}
 	Calculate $H(p)$, $H(q)$, $D(p{\mid\mid}q)$ and $D(q{\mid\mid}p)$. Verify that in this case, $D(p{\mid\mid}q)\not=D(q{\mid\mid}p)$ \\
-	\textbf{Answer}
+	\textbf{Answer:}
 	\begin{align*}
 		&H(p) = -(\frac{1}{2}\log\frac{1}{2} + \frac{1}{4}\log\frac{1}{4} + \frac{1}{4}\log\frac{1}{4}) = \frac{3}{2} \\
 		&H(q) = -(\frac{1}{3}\log\frac{1}{3} + \frac{1}{3}\log\frac{1}{3} + \frac{1}{3}\log\frac{1}{3}) = \log3 \\
@@ -61,7 +61,7 @@
 	\\
 	\par
 	3. Show that $lnx\geq1-\frac{1}{x}$ for $x>0$, where the equality holds when $x=1$. \\
-	\textbf{Proof} \par
+	\textbf{Proof:} \par
 	Let $f(x) = \ln x + \frac{1}{x} - 1$, and $f(1) = 0$. \par
 	The derivative of $f(x)$ is $\frac{d}{dx}f(x) = \frac{1}{x}-\frac{1}{x^2}$. \par
 	\textbf{(1). }For $0<x<1$, $\frac{d}{dx}f(x) = \frac{x-1}{x^2} < 0$. Therefore $f(x)$ is monotonically decreasing over $(0,1)$ \par
@@ -70,8 +70,8 @@
 	
 	\par
 	4. \textit{Conditioning reduces entropy.} Show that $H(Y{\mid}X) \leq H(Y)$ with equality iff X and Y are independent.\\
-	\textbf{Proof} \\
-	\textbf{Claim:}$D(p{\mid\mid}q) \geq 0$, with equality iff $p(x) = q(x)$ for all $x$. 
+	\textbf{Proof:} \\
+	\textbf{Claim }$D(p{\mid\mid}q) \geq 0$, with equality iff $p(x) = q(x)$ for all $x$. 
 	\begin{align*}
 		D(p{\mid\mid}q) &= \sum_{x\in\mathcal{X}} p(x)\log\frac{p(x)}{p(y)} \\
 					    &= -\sum_{x\in\mathcal{X}} p(x)\log\frac{p(y)}{p(x)} \\
@@ -84,7 +84,7 @@
 	
 	\par 
 	5. Show that $I(X;Y{\mid}Z)\geq0$ with equality iff $X\rightarrow Z\rightarrow Y$. \\ 
-	\textbf{Proof} \\
+	\textbf{Proof:} \\
 	Shown in Question 4 that 
 	\begin{align*}
 		I(X;Y) &= D(p(x,y){\mid\mid}p(x)p(y)) \geq 0
@@ -110,7 +110,7 @@
 	
 	\par 
 	7. Let $X$ and $Y$ be two random variables and let $Z$ be independent of $(X,Y)$. Show that $I(X;Y)\geq I(X;g(Y,Z))$ for any function $g$. \\
-	\textbf{Proof} 
+	\textbf{Proof:} 
 	\begin{align*}
 		I(X;Y) &= H(X) - H(X{\mid}Y) && \text{\textbf{by definition}}\\
 			   &= H(X) - H(X{\mid}(Y,Z)) && \text{\textbf{independence between X and Z}}\\
@@ -123,7 +123,7 @@
 	8. \textit{Bottleneck.} Suppose that a (non-stationary) Markov chain starts in one of $n$ states, necks down to $k<n$ states, and then fans back to $m>k$ states. Thus $X_1\rightarrow X_2\rightarrow X_3$, that is, $p(x_1,x_2,x_3) = p(x_1)p(x_2{\mid}x_1)p(x_3{\mid}x_2)$, for all $x_1\in\{1,2,...,n\}$, $x_2\in\{1,2,...,k\}$, $x_3\in\{1,2,...,m\}$. \\
 	(a) Show that the dependence of $X_1$ and $X_3$ is limited by the bottleneck by proving that $I(X_1;X_3)\leq \log k$ \\
 	(b) Evaluate $I(X_1;X_3)$ for $k=1$, and conclude that no dependence can survive such a bottleneck.\\
-	\textbf{Proof}\\
+	\textbf{Proof:}\\
 	(a) By the data processing inequality
 	\begin{align*}
 		I(X_1;X_3) &\leq I(X_1;X_2) \\
