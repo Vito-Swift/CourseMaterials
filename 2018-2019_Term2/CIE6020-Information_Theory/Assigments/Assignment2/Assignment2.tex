@@ -1,0 +1,140 @@
+\documentclass[12pt]{article}
+\usepackage{indentfirst}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{tikz}
+
+\setlength{\parindent}{20pt}
+\setlength{\oddsidemargin}{0.25cm}
+\setlength{\evensidemargin}{0.25cm}
+\setlength{\marginparsep}{0.5cm}
+\setlength{\marginparwidth}{1.5cm}
+\setlength{\textwidth}{160mm}
+\renewcommand{\baselinestretch}{1.5}
+
+\author{WU, Chenhao  117010285}
+\title{CIE 6020 Assignment 2}
+\date{February 18, 2019}
+
+\begin{document}
+	\maketitle
+	\par
+	1. Let X, Y, Z be three random variables with a joint probability mass function $p(x,y,z)$. The relative entropy between the joint distribution and the product of the marginal is 
+	\begin{align*}
+		D(p(x,y,z){\mid}{\mid}p(x)p(y)p(z)) = E[\log\frac{p(x,y,z)}{p(x)p(y)p(z)}]
+	\end{align*}
+	Expand this in terms of entropies. When is this quantity zero?\\
+	\textbf{Answer} 
+	\begin{align*}
+		E[\log\frac{p(x,y,z)}{p(x)p(y)p(z)}] &= E[\log p(x,y,z) - \log p(x) - \log p(y) - \log p(z)] \\
+								             &= E[\log p(x,y,z)] - E[\log p(x)] - E[\log p(y)] - E[\log p(z)] \\
+								             &= -H(X,Y,Z) + H(X) + H(Y) + H(Z)
+	\end{align*}
+	in which the quantity is zero iff $X$, $Y$ and $Z$ are mutually independent \\
+	i.e. $p(x,y,z) = p(x)p(y)p(z)$.\\
+	
+	\par
+	2. Let the random variable $X$ have three possible outcomes {$a,b,c$}. Consider two distributions on this random variable:
+	\begin{table}[H]
+		\centering
+		\makebox[\linewidth]{
+			\begin{tabular}{|c|c|c|}
+				\hline 
+				symbol & $p(x)$ & $p(y)$ \\ \hline
+				a & $\frac{1}{2}$ & $\frac{1}{3}$ \\ \hline 
+				b & $\frac{1}{4}$ & $\frac{1}{3}$ \\ \hline 
+				c & $\frac{1}{4}$ & $\frac{1}{3}$ \\ \hline
+			\end{tabular}
+		}
+	\end{table}
+	Calculate $H(p)$, $H(q)$, $D(p{\mid\mid}q)$ and $D(q{\mid\mid}p)$. Verify that in this case, $D(p{\mid\mid}q)\not=D(q{\mid\mid}p)$ \\
+	\textbf{Answer}
+	\begin{align*}
+		&H(p) = -(\frac{1}{2}\log\frac{1}{2} + \frac{1}{4}\log\frac{1}{4} + \frac{1}{4}\log\frac{1}{4}) = \frac{3}{2} \\
+		&H(q) = -(\frac{1}{3}\log\frac{1}{3} + \frac{1}{3}\log\frac{1}{3} + \frac{1}{3}\log\frac{1}{3}) = \log3 \\
+		&D(p{\mid\mid}q) = \frac{1}{2}\log\frac{\frac{1}{2}}{\frac{1}{3}} + \frac{1}{4}\log\frac{\frac{1}{4}}{\frac{1}{3}} + \frac{1}{4}\log\frac{\frac{1}{4}}{\frac{1}{3}} = \log3 - \frac{3}{2} \\
+		&D(q{\mid\mid}p) = \frac{1}{3}\log\frac{\frac{1}{3}}{\frac{1}{2}} + \frac{1}{3}\log\frac{\frac{1}{3}}{\frac{1}{4}} + \frac{1}{3}\log\frac{\frac{1}{3}}{\frac{1}{4}} = -\log3+\frac{5}{3}
+	\end{align*}
+	\\
+	\par
+	3. Show that $lnx\geq1-\frac{1}{x}$ for $x>0$, where the equality holds when $x=1$. \\
+	\textbf{Proof} \par
+	Let $f(x) = \ln x + \frac{1}{x} - 1$, and $f(1) = 0$. \par
+	The derivative of $f(x)$ is $\frac{d}{dx}f(x) = \frac{1}{x}-\frac{1}{x^2}$. \par
+	\textbf{(1). }For $0<x<1$, $\frac{d}{dx}f(x) = \frac{x-1}{x^2} < 0$. Therefore $f(x)$ is monotonically decreasing over $(0,1)$ \par
+	\textbf{(2). }For $x>1$, $\frac{d}{dx}f(x) = \frac{x-1}{x^2} > 0$. Therefore $f(x)$ is monotonically increasing over $(1, +\infty)$ \par
+	Hence, for $x>0$, $lnx\geq 1-\frac{1}{x}$.\\
+	
+	\par
+	4. \textit{Conditioning reduces entropy.} Show that $H(Y{\mid}X) \leq H(Y)$ with equality iff X and Y are independent.\\
+	\textbf{Proof} \\
+	\textbf{Claim:}$D(p{\mid\mid}q) \geq 0$, with equality iff $p(x) = q(x)$ for all $x$. 
+	\begin{align*}
+		D(p{\mid\mid}q) &= \sum_{x\in\mathcal{X}} p(x)\log\frac{p(x)}{p(y)} \\
+					    &= -\sum_{x\in\mathcal{X}} p(x)\log\frac{p(y)}{p(x)} \\
+					    &\geq -\log\sum_{x\in\mathcal{X}}p(x)\frac{q(x)}{p(x)} \\
+					    &= -\log\sum_{x\in\mathcal{X}}q(x) \\
+					    &= -\log1 \\
+					    &= 0
+	\end{align*}	
+	Also, $H(Y)-H(Y{\mid}X) = I(X;Y) = D(p(x,y){\mid\mid}p(x)p(y)) \geq 0$ and equality holds iff $p(x,y) = p(x)p(y)$, in which $p(x)$ and $p(y)$ are independent. \\
+	
+	\par 
+	5. Show that $I(X;Y{\mid}Z)\geq0$ with equality iff $X\rightarrow Z\rightarrow Y$. \\ 
+	\textbf{Proof} \\
+	Shown in Question 4 that 
+	\begin{align*}
+		I(X;Y) &= D(p(x,y){\mid\mid}p(x)p(y)) \geq 0
+	\end{align*}
+	we can expand the conclusion to conditional mutual information given $Z$ since that 
+	\begin{align*}
+		I(X;Y{\mid}Z) = \textbf{\textit{E}}_{p(x,y,z)}\log\frac{p(X,Y|Z)}{p(X|Z)p(Y|Z)} \geq 0
+	\end{align*}
+	and also equality holds iff $X$ and $Y$ are independent conditioning to $Z$, which is also a necessary condition of Markov chain $X\rightarrow Z\rightarrow Y$.\\
+	
+	\par 
+	6. \textit{Data processing.} Let $X_1\rightarrow X_2\rightarrow X_3\rightarrow ... \rightarrow X_n$ form a Markov chain, i.e., 
+	\begin{align*}
+		p(x_1,x_2,...,x_n) &= p(x_1)p(x_2{\mid}x_1)...p(x_n{\mid}x_{n-1})
+	\end{align*}
+	Reduce $I(X_1;X_2,...,X_n)$ to its simplest form.\\
+	\textbf{Answer}\\ 
+	From the chain rule for mutual information we have
+	\begin{align*}
+		I(X_1;X_2,...,X_n) &= I(X_1;X_2) + I(X_1;X_3{\mid}X_2) +...+ I(X_1;X_n{\mid}X_2,...,X_{n-2}) \\
+		&= I(X_1;X_2)
+	\end{align*}
+	
+	\par 
+	7. Let $X$ and $Y$ be two random variables and let $Z$ be independent of $(X,Y)$. Show that $I(X;Y)\geq I(X;g(Y,Z))$ for any function $g$. \\
+	\textbf{Proof} 
+	\begin{align*}
+		I(X;Y) &= H(X) - H(X{\mid}Y) && \text{\textbf{by definition}}\\
+			   &= H(X) - H(X{\mid}(Y,Z)) && \text{\textbf{independence between X and Z}}\\
+			   &\geq H(X) - H(X{\mid}g(Y,Z)) && \text{\textbf{$H(X{\mid}(Y,Z))\leq H(X{\mid}g(Y,Z))$}} \\
+			   & &&\text{\textbf{with equality iff $(Y,Z)$ is a function of $g(Y,Z)$}} \\
+			   &= I(X;g(Y,Z)) \\
+	\end{align*}
+	
+	\par 
+	8. \textit{Bottleneck.} Suppose that a (non-stationary) Markov chain starts in one of $n$ states, necks down to $k<n$ states, and then fans back to $m>k$ states. Thus $X_1\rightarrow X_2\rightarrow X_3$, that is, $p(x_1,x_2,x_3) = p(x_1)p(x_2{\mid}x_1)p(x_3{\mid}x_2)$, for all $x_1\in\{1,2,...,n\}$, $x_2\in\{1,2,...,k\}$, $x_3\in\{1,2,...,m\}$. \\
+	(a) Show that the dependence of $X_1$ and $X_3$ is limited by the bottleneck by proving that $I(X_1;X_3)\leq \log k$ \\
+	(b) Evaluate $I(X_1;X_3)$ for $k=1$, and conclude that no dependence can survive such a bottleneck.\\
+	\textbf{Proof}\\
+	(a) By the data processing inequality
+	\begin{align*}
+		I(X_1;X_3) &\leq I(X_1;X_2) \\
+				   &= H(X_2) - H(X_2|X_1) \\
+				   &\leq H(X_2) \\
+				   &\leq \log k
+	\end{align*}
+	(b) If $k = 1$, then
+	\begin{align*}
+		I(X_1;X_3) &\leq \log1 \\
+		           &= 0
+	\end{align*}
+	in which $I(X_1;X_3)\geq0$, thus $I(X_1;X_3) = 0$ $\rightarrow$ $X_1$ and $X_3$ are independent.
+\end{document}

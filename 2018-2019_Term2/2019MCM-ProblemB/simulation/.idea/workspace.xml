@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0f43c1ec-fa19-4f64-8225-aea4739d2358" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitting.py" beforeDir="false" afterPath="$PROJECT_DIR$/fitting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CIE6020-Information_Theory/Assigments/Assignment2.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../CIE6020-Information_Theory/Assigments/Assignment2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CIE6020-Information_Theory/Assigments/Assignment2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../CIE6020-Information_Theory/Assigments/Assignment2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CIE6020-Information_Theory/Assigments/Assignment2.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../../CIE6020-Information_Theory/Assigments/Assignment2.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CIE6020-Information_Theory/Assigments/Assignment2.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../CIE6020-Information_Theory/Assigments/Assignment2.tex" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +23,7 @@
     <session id="117216019">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.8" value="1" />
@@ -175,7 +178,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="31" />
     <option name="width" value="1322" />
     <option name="height" value="1049" />
@@ -318,8 +321,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="31" width="1920" height="1049" extended-state="7" />
-    <editor active="true" />
+    <frame x="0" y="31" width="1920" height="1049" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1318328" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
