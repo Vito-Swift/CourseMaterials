@@ -22,10 +22,24 @@
 	Smart lamp-post is an intelligent system generally embedded in streetside lamp-posts, with a variety of functions integrated such as adaptive street lighting, PM2.5 detection, streetside WiFi(Access Point), video reconnaissance and so on. In order to control each lamp-post in the data center and collect data from sensors, a company from Hong Kong of which main business is manufacturing smart lamp-post need us to provide an approach to form a network between each lamp-post with both efficiency and reliability. Available options are Wi-Fi(wireless network based on IEEE 802.11), ZigBee(wireless network based on IEEE 802.15.4), 4G network and fiber. The difficulty of selecting among is that each option has its merits and precedents, which implies the recommendation will highly depend on the actual scenario. The purpose of this report is to evaluate each method and determine a method to form a hop-by-hop network which is most suitable for the actual scenario.
 	
 	\section{Selection Criterion}
-	Based on demands of the company and the actual scenario, we filter the specification of each type of network into four selection criterion, which are latency, bandwidth, deployment cost and transmission cost. \\ \par 
+	Based on demands of the company and the actual scenario, we filter the specification of each type of network into four selection criterion, which are latency, bandwidth, deployment cost per mile and transmission cost per bit. \\ \par 
 	
 	\textbf{Latency} \par 
-	The first criterion is significant in a scenario while users are making video or voice call with others. 
+	The first criterion, latency, is significant in a scenario while users are making video or voice calls with others by using streetside WiFi. Since in other cases like adaptive street lighting and PM2.5 low latency are not essential, we take latency into our consideration with a lower priority.
+	
+	\par  
+	
+	\textbf{Bandwidth} \par 
+	The second important criterion is the bandwidth, which will affect the quality of video streaming and streetside WiFi. 
+	\par 
+	
+	\textbf{Deployment cost} \par 
+	The deployment cost is the third criterion aiming to evaluate the convenience of deploying smart lamp-posts, which consists of various components. For instance, we will consider the wireless device cost, construction cost , development cost and so on. 
+	\par 
+	
+	\textbf{Transmission cost} \par 
+	The most important criterion is the transmission cost. Since that the company has demands for video reconnaissance and 4K cameras in the network can instantly produce 100 MB traffic within a second, the network traffic is expected to reach and exceed 1400 GB each day. In order to reduce additional expenses the transmission cost of the network ought to be evaluated and controlled since the transmission cost is the bottleneck of daily operation fee.
+	
 	
 	\section{Finding and Analysis}
 	
