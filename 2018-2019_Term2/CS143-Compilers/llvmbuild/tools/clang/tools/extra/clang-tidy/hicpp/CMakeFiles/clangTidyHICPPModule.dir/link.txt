@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../../../../lib/libclangTidyHICPPModule.a  CMakeFiles/clangTidyHICPPModule.dir/NoAssemblerCheck.cpp.o CMakeFiles/clangTidyHICPPModule.dir/HICPPTidyModule.cpp.o
+/usr/bin/ranlib ../../../../../../lib/libclangTidyHICPPModule.a

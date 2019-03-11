@@ -1,0 +1,6 @@
+LLVM_5.0 {
+  global:
+    clang_registerCheckers;
+    clang_analyzerAPIVersionString;
+  local: *;
+};

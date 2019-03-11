@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../../../../lib/libclangTidyBugproneModule.a  CMakeFiles/clangTidyBugproneModule.dir/BugproneTidyModule.cpp.o CMakeFiles/clangTidyBugproneModule.dir/SuspiciousMemsetUsageCheck.cpp.o CMakeFiles/clangTidyBugproneModule.dir/UndefinedMemoryManipulationCheck.cpp.o
+/usr/bin/ranlib ../../../../../../lib/libclangTidyBugproneModule.a

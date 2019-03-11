@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../../../../lib/libclangTidyAndroidModule.a  CMakeFiles/clangTidyAndroidModule.dir/AndroidTidyModule.cpp.o CMakeFiles/clangTidyAndroidModule.dir/CloexecCreatCheck.cpp.o CMakeFiles/clangTidyAndroidModule.dir/CloexecFopenCheck.cpp.o CMakeFiles/clangTidyAndroidModule.dir/CloexecOpenCheck.cpp.o CMakeFiles/clangTidyAndroidModule.dir/CloexecSocketCheck.cpp.o
+/usr/bin/ranlib ../../../../../../lib/libclangTidyAndroidModule.a

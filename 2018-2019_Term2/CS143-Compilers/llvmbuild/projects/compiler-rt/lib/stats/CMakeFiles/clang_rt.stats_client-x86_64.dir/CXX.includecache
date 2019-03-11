@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/CS143-Compilers/testCompiler/llvm/projects/compiler-rt/lib/stats/../sanitizer_common/sanitizer_internal_defs.h
+sanitizer_platform.h
+/home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/CS143-Compilers/testCompiler/llvm/projects/compiler-rt/lib/stats/../sanitizer_common/sanitizer_platform.h
+sanitizer_win_defs.h
+/home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/CS143-Compilers/testCompiler/llvm/projects/compiler-rt/lib/stats/../sanitizer_common/sanitizer_win_defs.h
+
+/home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/CS143-Compilers/testCompiler/llvm/projects/compiler-rt/lib/stats/../sanitizer_common/sanitizer_platform.h
+TargetConditionals.h
+-
+
+/home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/CS143-Compilers/testCompiler/llvm/projects/compiler-rt/lib/stats/../sanitizer_common/sanitizer_win_defs.h
+sanitizer_platform.h
+/home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/CS143-Compilers/testCompiler/llvm/projects/compiler-rt/lib/stats/../sanitizer_common/sanitizer_platform.h
+
+/home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/CS143-Compilers/testCompiler/llvm/projects/compiler-rt/lib/stats/../stats/stats.h
+sanitizer_common/sanitizer_internal_defs.h
+/home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/CS143-Compilers/testCompiler/llvm/projects/compiler-rt/lib/stats/../stats/sanitizer_common/sanitizer_internal_defs.h
+
+/home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/CS143-Compilers/testCompiler/llvm/projects/compiler-rt/lib/stats/stats_client.cc
+windows.h
+-
+dlfcn.h
+-
+stdint.h
+-
+stdio.h
+-
+sanitizer_common/sanitizer_internal_defs.h
+/home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/CS143-Compilers/testCompiler/llvm/projects/compiler-rt/lib/stats/sanitizer_common/sanitizer_internal_defs.h
+stats/stats.h
+/home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/CS143-Compilers/testCompiler/llvm/projects/compiler-rt/lib/stats/stats/stats.h
+
