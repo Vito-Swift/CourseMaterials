@@ -1,0 +1,3 @@
+/home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/CS143-Compilers/testCompiler/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/CS143-Compilers/testCompiler/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/vitowu/Documents/CourseMaterials/CourseMaterials/2018-2019_Term2/CS143-Compilers/testCompiler/cmake-build-debug/CMakeFiles/kale.dir

@@ -6,3 +6,4 @@ SET(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 MESSAGE("-Building My Compiler")
 
+add_executable(kale test/testKaleidoscope.cpp)

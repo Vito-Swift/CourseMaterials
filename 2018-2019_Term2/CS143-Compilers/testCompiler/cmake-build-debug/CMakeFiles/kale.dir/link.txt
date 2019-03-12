@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/kale.dir/test/testKaleidoscope.cpp.o  -o kale 
