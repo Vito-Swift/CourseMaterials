@@ -1,0 +1,128 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{shannon1948}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SCE}{%
+         family={Shannon},
+         familyi={S\bibinitperiod},
+         given={Claude\bibnamedelima E},
+         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \keyw{classic}
+    \strng{namehash}{SCE1}
+    \strng{fullhash}{SCE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{A mathematical theory of communication}
+    \verb{url}
+    \verb http://dl.acm.org/citation.cfm?id=584093
+    \endverb
+    \field{journaltitle}{Bell Systems Technical Journal}
+    \field{year}{1948}
+  \endentry
+
+  \entry{feizi2017understanding}{article}{}
+    \name{author}{4}{}{%
+      {{hash=FS}{%
+         family={Feizi},
+         familyi={F\bibinitperiod},
+         given={Soheil},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Suh},
+         familyi={S\bibinitperiod},
+         given={Changho},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=XF}{%
+         family={Xia},
+         familyi={X\bibinitperiod},
+         given={Fei},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=TD}{%
+         family={Tse},
+         familyi={T\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \keyw{GAN}
+    \strng{namehash}{FSSCXF+1}
+    \strng{fullhash}{FSSCXFTD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Understanding {GAN}s: the {LQG} Setting}
+    \verb{url}
+    \verb https://arxiv.org/abs/1710.10793
+    \endverb
+    \field{journaltitle}{arXiv preprint arXiv:1710.10793}
+    \field{year}{2017}
+  \endentry
+
+  \entry{farias2010universal}{article}{}
+    \name{author}{4}{}{%
+      {{hash=FVF}{%
+         family={Farias},
+         familyi={F\bibinitperiod},
+         given={Vivek\bibnamedelima F},
+         giveni={V\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=MCC}{%
+         family={Moallemi},
+         familyi={M\bibinitperiod},
+         given={Ciamac\bibnamedelima C},
+         giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=VRB}{%
+         family={Van\bibnamedelima Roy},
+         familyi={V\bibinitperiod\bibinitdelim R\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=WT}{%
+         family={Weissman},
+         familyi={W\bibinitperiod},
+         given={Tsachy},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \keyw{reinforcement}
+    \strng{namehash}{FVFMCCVRB+1}
+    \strng{fullhash}{FVFMCCVRBWT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/TIT.2010.2043762
+    \endverb
+    \field{number}{5}
+    \field{pages}{2441\bibrangedash 2454}
+    \field{title}{Universal reinforcement learning}
+    \field{volume}{56}
+    \field{journaltitle}{IEEE Transactions on Information Theory}
+    \field{year}{2010}
+  \endentry
+\enddatalist
+\endinput

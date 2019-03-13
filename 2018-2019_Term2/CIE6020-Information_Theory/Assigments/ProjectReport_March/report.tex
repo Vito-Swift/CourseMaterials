@@ -1,0 +1,120 @@
+\documentclass[]{article}
+\usepackage{amsmath,amssymb,amsfonts,amsbsy}
+%\usepackage{fancybox}
+%\usepackage{graphicx}
+\usepackage{soul,soulutf8}
+\usepackage{url,color}
+\usepackage{fullpage}
+
+\usepackage[autocite=footnote,
+    backend=bibtex,
+    citestyle=ieee,
+    isbn=false,
+    doi=false,
+    url=false
+]{biblatex}
+\addbibresource{IT.bib}
+
+
+%\baselineskip=15pt
+% \pagestyle{plain}   %with page numbers
+% \pagestyle{empty} %without page numbers
+
+\renewcommand{\baselinestretch}{1.25}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\cX}{\mathcal{X}}
+%\newcommand{\tr}{\mathrm{tr}}
+\renewcommand{\st}{\mathrm{s.t.}}
+
+%\usepackage[toc]{multitoc}
+\begin{document}
+
+%Enter your title here
+\title{Profile-Guided Source Coding on Dual-Compilation}
+%Enter your name Here
+\author{WU, Chenhao}
+\date{}
+
+\makeatletter
+\let\inserttitle\@title
+\let\insertauthor\@author
+\makeatother
+
+\begin{titlepage}
+\centering
+{   \textsc{\Large CIE 6020 Information Theory (Spring, 2018)}\\[0.5 cm]}
+{\Large\bf Course Report: \inserttitle}\\[.2in]
+Name: \underline{\quad\quad \insertauthor \quad\quad  
+}
+\hspace{0.3in}
+ID Number: \underline{\quad\quad
+%Enter Your ID number Here
+117010285
+\quad\quad}
+\vspace{0.5 cm}\\
+\fbox{\parbox{\textwidth}{
+\begin{itemize}
+% \item 
+% Date assigned: Friday 19/1/2018
+% \item 
+% Date due: Thursday 1/2/2018, 11:55 PM
+\item
+This cover sheet must be signed and submitted along with the report on additional sheets
+\item
+By submitting this report with my name affixed above,
+\begin{itemize}
+%\item
+%I understand that report submitted at 11:56 PM or later will not be accepted,
+\item
+I acknowledge that I am aware of the University policy concerning academic misconduct (appended below),
+\item
+I attest that the work I am submitting for this assignment is solely my own, and
+\item
+I understand that suspiciously similar homework submitted by multiple
+individuals will be reported to School and Registry for investigation.
+\end{itemize}
+\item
+Academic Misconduct in any form is in violation of CUHK(SZ)'s Student Disciplinary Regulations and will not be tolerated. This includes, but is not limited to: copying or sharing answers on tests or assignments, plagiarism, having someone else do your academic work or working with someone on homework when not permitted to do so by the instructor. Depending on the act, a student could receive an F grade on the test/assignment, F grade for the course, and could be suspended or expelled from the University.
+\end{itemize}}}
+\end{titlepage}
+
+%%% Begin of the report 
+\maketitle
+
+\begin{abstract}
+Type your abstract about this report here.  
+\end{abstract}
+
+\section{What should you write?}
+Read several papers related to information theory in general, and
+write a reading report. For example, Shannon's 1948 paper
+\cite{shannon1948}, and some recent papers about machine learning \cite{feizi2017understanding,farias2010universal}.
+
+For example, you may write a summary of the research in the papers
+using your own words. It is better that you can have your own
+reflection. 
+
+
+
+
+\section{What kinds of papers should you choose?}
+You may select papers from our reading list, or choose other papers that closely related to information theory.
+
+ 
+
+\section{PDF requirements}
+\emph{Please typeset your report using LaTex.} Only electronic submissions in form of a PDF file will be
+accepted. The PDF file has to be PDF/A compliant. A common problem is
+missing fonts. Make sure that all fonts are embedded. (In some cases,
+printing a PDF to a PostScript file, and then creating a new PDF with
+Acrobat Distiller, may do the trick.)
+
+
+\section{Conclusion}
+Write your conclusion here.
+
+
+\printbibliography
+
+
+\end{document}

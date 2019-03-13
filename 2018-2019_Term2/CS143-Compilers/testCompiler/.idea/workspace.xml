@@ -11,13 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d956720-2e17-421e-afd1-bc0c2b3ae67a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/testKaleidoscope.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ENG2002S-English_for_Science&amp;Engineering_Comm./RecommendationReport/report.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../ENG2002S-English_for_Science&amp;Engineering_Comm./RecommendationReport/report.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ENG2002S-English_for_Science&amp;Engineering_Comm./RecommendationReport/report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../ENG2002S-English_for_Science&amp;Engineering_Comm./RecommendationReport/report.pdf" afterDir="false" />
-    </list>
+    <list default="true" id="4d956720-2e17-421e-afd1-bc0c2b3ae67a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,11 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/testKaleidoscope.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-              <folding>
-                <element signature="e#41#88#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="189">
+              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -127,7 +118,7 @@
       <path value="$PROJECT_DIR$/llvm/utils/vscode/tablegen/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="5">
     <option name="x" value="1920" />
     <option name="width" value="1288" />
     <option name="height" value="1440" />
@@ -230,15 +221,15 @@
       <option name="presentableId" value="Default" />
       <updated>1552236457080</updated>
       <workItem from="1552236458262" duration="700000" />
-      <workItem from="1552294912914" duration="4012000" />
+      <workItem from="1552294912914" duration="4621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4712000" />
+    <option name="totallyTimeSpent" value="5321000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="0" width="1288" height="1440" extended-state="4" />
+    <frame x="1920" y="0" width="1288" height="1440" extended-state="5" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.095623985" />
@@ -285,11 +276,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/testKaleidoscope.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-          <folding>
-            <element signature="e#41#88#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="189">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
         </state>
       </provider>
     </entry>
