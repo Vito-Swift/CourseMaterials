@@ -11,6 +11,7 @@
 \usepackage{subcaption}
 \usepackage{wrapfig}
 
+
 \usetikzlibrary{shapes, arrows}
 
 \usepackage[autocite=footnote,
@@ -54,8 +55,8 @@ minimum height=2em]
 %Enter your title here
 \title{Profile-Guided Source Coding in Dual-Compilation}
 %Enter your name Here
-\author{Chenhao, WU}
-\date{}
+\author{Chenhao Wu}
+\date{March, 2019}
 
 \makeatletter
 \let\inserttitle\@title
@@ -103,15 +104,15 @@ Academic Misconduct in any form is in violation of CUHK(SZ)'s Student Disciplina
 %%% Begin of the report 
 \maketitle
 
-\begin{abstract}
-
-\end{abstract}
+%\begin{abstract}
+%Within this decade, the computing performance of mobiles and embedded systems have been significantly raised such that more computing workloads can be undertaken on mobiles and embedded systems, such as digital image processing, augmented-reality applications, and so on. In practice, one of the critical bottlenecks in mobiles and embedded systems design and optimization is the run-time memory space and power consumption. Since the complexity of program and data set grew much faster than the performance of memory capacity in the mobile and embedded system, rather than merely use expensive computing components to feed the needs of applications with high computing overhead, it is more promising to find ways to best utilize the system use of memory space. To realize this objective, we proposed a profile-guided source coding (PGSC), which will perform an adaptive compiler-guided data compression on memory space during run-time according to different applications and run-time environment.
+%\end{abstract}
 
 \section{Introduction}
-Within this decade, the computing performance of mobiles and embedded systems have been significantly raised such that more computing workloads can be undertaken on mobiles and embedded systems, such as digital image processing, augmented-reality applications, and so on. In practice, one of the critical bottlenecks in mobiles and embedded systems design and optimization is the run-time memory space and power consumption. Since the complexity of program and data set grew much faster than the performance of memory capacity in the mobile and embedded system, rather than merely use expensive computing components to feed the needs of applications with high computing overhead, it is more promising to find ways to best utilize the system use of memory space. To realize this objective, we proposed a profile-guided source coding (PGSC), which will perform an adaptive compiler-guided data compression on memory space during run-time according to different applications and run-time environment. \par 
+Within this decade, the computing performance of mobiles and embedded systems have been significantly raised such that more computing workloads can be undertaken on mobiles and embedded systems, such as digital image processing, machine learning and deep learning applications, augmented-reality applications, and so on. In practice, one of the critical bottlenecks in mobiles and embedded systems design and optimization is the run-time memory space and power consumption. Since the complexity of program and data set grew much faster than the performance of memory capacity in the mobile and embedded system, rather than merely use expensive computing components to feed the needs of applications with high computing overhead, it is more promising to find ways to best utilize the system use of memory space. To realize this objective, we proposed a profile-guided source coding (PGSC), which will perform an adaptive compiler-guided data compression on memory space during run-time according to different applications and run-time environment. \par 
 
 \begin{figure}[H]
-\begin{minipage}[h][8cm][s]{.27\textwidth}
+\begin{minipage}[b][8cm][s]{.27\textwidth}
 	\centering
 	\vfill
 	\begin{tikzpicture}[node distance = 2cm, auto]
@@ -132,12 +133,13 @@ Within this decade, the computing performance of mobiles and embedded systems ha
 	\end{tikzpicture}
 	
 	\vfill
+	\captionsetup{justification=centering}
 	\caption{Traditional Compilation Procedure}
 	\label{fig:compil}
 	
 	\vspace{\baselineskip}
 \end{minipage}\qquad
-\begin{minipage}[h][8cm][s]{.35\textwidth}
+\begin{minipage}[b][8cm][s]{.35\textwidth}
 	\centering
 	\vfill
 	\begin{tikzpicture}[node distance = 2cm, auto]
@@ -153,18 +155,19 @@ Within this decade, the computing performance of mobiles and embedded systems ha
 	
 	%Draw edges
 	\path [line] (Source Code) 		    -- 										(Compiler Frontend);
-	\path [line] (Compiler Frontend)    -- node {\scriptsize Optimization} 		(IR);
-	\path [line] (IR) 					-- node {\scriptsize Optimization} 		(Compiler Backend);
+	\path [line] (Compiler Frontend)    -- node {\scriptsize Opt.} 		(IR);
+	\path [line] (IR) 					-- node {\scriptsize Opt.} 		(Compiler Backend);
 	\path [line] (Compiler Backend)		-- node[above, align=center] {\scriptsize Instrumented\\ \scriptsize executable} (SR);
 	\path [line] (SR)					-- 									    (Re-Compile);
 	\path [line] (Re-Compile)			-- node {\scriptsize Profile-Guided}	(Binary Executable);
 	
 	\end{tikzpicture}
 	\vfill
+	\captionsetup{justification=centering}
 	\caption{Compilation Procedure with PGO}
 	\label{fig:compilpgo}
 \end{minipage}\qquad
-\begin{minipage}[h][8cm][s]{.3\textwidth}
+\begin{minipage}[b][8cm][s]{.3\textwidth}
 	\centering
 	\vfill
 	\begin{tikzpicture}[node distance = 2cm, auto]
@@ -187,15 +190,24 @@ Within this decade, the computing performance of mobiles and embedded systems ha
 	\end{tikzpicture}
 	\vfill
 	\caption{Profile-Guided Source Coding}
+	\captionsetup{justification=centering}
 	\label{fig:compilpgosrc}
 \end{minipage}
 \end{figure}
 
-The idea of this approach comes from a modern compilation technique, Profiled-Guided Optimization (PGO), that as shown in Figure 1 and Figure 2, differed from traditional approach, the compiler will perform a recompilation based on initial executable and sample runs. A profile, for instance, breaks the source code into blocks and devises a table of the frequency each block is executed via sample runs, and during recompilation, code blocks will be reordered with respect to the frequency table. For example, blocks with higher frequency will be allocated in memory area with lower memory address and blocks with lower frequency will be allocated in higher address so that the additional I/O overhead consumed in function callbacks will be reduced. Similar to previous compiler optimization methods, like the deletion of unreachable code, the constant folding optimization and propagation optimization, the objective of PGO is to further reduce the redundancy of unnecessary and/or unimportant logic branches in the source program. \par 
-The usage of this approach, however, can be extended into attempts to reduce the memory space, that after sample runs, not only the frequency of code blocks can be collected, but also the preliminary investigation of frequency that each block of memory is accessed can be gathered. As shown in Figure 3, the procedure of PGSC consists of a dual-stage compilation, that the compiler will initially compile the source code into an instrumented executable, and based on a profile generated after sample runs, the compiler will re-compile the source code such that during the run-time, the program will compress specific areas of memory space in order to reduce the redundancy of memory use, and will instantaneously decompress the compressed contents whenever the program needs. \par 
-In the trend that more and more mobile applications buffer long arrays of audio, images and video clips into the memory space during run-time, compared with the static data compression and the original version of PGO, .
+The idea of this approach comes from a modern compilation technique, Profiled-Guided Optimization (PGO), that as shown in Figure 1 and Figure 2, differed from the traditional approach \cite{CompilerDesign}, the compiler will perform a recompilation based on initial executable and sample runs. A profile, for instance, breaks the source code into blocks and devises a table of the frequency each block is executed via sample runs, and during recompilation, code blocks will be reordered with respect to the frequency table. For example, blocks with higher frequency will be allocated in memory area with lower memory address and blocks with lower frequency will be allocated in higher address so that the additional I/O overhead consumed in function callbacks will be reduced. Similar to previous compiler optimization methods, like the deletion of unreachable code, the constant folding optimization and propagation optimization, the objective of PGO is to further reduce the redundancy of unnecessary and/or unimportant logic branches in the source program. \par 
+The usage of this approach, however, can be extended into attempts in reducing the memory space, that after sample runs, not only the frequency of code blocks can be collected, but also the preliminary investigation of frequency that each block of memory is accessed can be gathered as well. As shown in Figure 3, the procedure of PGSC consists of a dual-stage compilation, that the compiler will initially compile the source code into an instrumented executable, and based on a profile generated after sample runs, the compiler will re-compile the source code such that during the run-time, the program will compress specific areas of memory space in order to reduce the redundancy of memory use, and will instantaneously decompress the compressed contents whenever the program needs. \par 
+In the tide that more and more applications on mobile and embedded systems behave to buffer long arrays of audio, images and video frames into the memory space during run-time, that in a low frequency the program access to them but they still need to be remained in the memory space, such as intermediate training matrices, sample sets of images and so on, PGSC can regularly compress them to reduce the buffer size. The compression is compiler-guided, thus it can be performed no matter which optimization has been applied onto the program and what third-party library the program has imported. \par 
+In this report we will briefly introduce the control flow of PGSC, and methodologies we applied to perform the compression over memory space, and the implementation of a compiler with PGSC. 
 
-\section{Related Works}
+\section{Related Work}
+\cite{MSAli2008} \cite{OO2009} \cite{KSKO2017} \cite{MTK2011}	
+	
+%\section{Implementation}
+
+	%\subsection{Compression Method}
+	
+	%\subsection{Run-time Compression}
 
 \printbibliography
 

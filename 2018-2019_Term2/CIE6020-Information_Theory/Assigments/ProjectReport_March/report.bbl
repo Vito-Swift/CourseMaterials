@@ -16,5 +16,102 @@
   {}
 \endgroup
 
-\datalist[entry]{none/global//global/global}\enddatalist
+\datalist[entry]{none/global//global/global}
+  \entry{CompilerDesign}{book}{}
+    \name{author}{1}{}{%
+      {{hash=AAJURS}{%
+         family={A.\bibnamedelima Aho},
+         familyi={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+         suffix={R.\bibnamedelima Sethi},
+         suffixi={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+         given={J.D.\bibnamedelima Ullman},
+         giveni={J\bibinitperiod\bibinitdelim U\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Addison-Wesley}%
+    }
+    \strng{namehash}{AARSJU1}
+    \strng{fullhash}{AARSJU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Compiler: Principles, Techniques, and Tools}
+    \field{year}{1986}
+  \endentry
+
+  \entry{MSAli2008}{article}{}
+    \field{labeltitlesource}{title}
+    \field{title}{Compiled Code Compression for Embedded Systems using
+  Evolutionary Computing}
+  \endentry
+
+  \entry{OO2009}{article}{}
+    \name{author}{1}{}{%
+      {{hash=OOMJIMK}{%
+         family={Ozcan\bibnamedelima Ozturk},
+         familyi={O\bibinitperiod\bibinitdelim O\bibinitperiod},
+         suffix={Mahmut\bibnamedelima Kandemir},
+         suffixi={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+         given={Mary Jan\bibnamedelima Irwin},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OOMKMJI1}
+    \strng{fullhash}{OOMKMJI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{IEEE Transactions on Computer-Aided Design of Intergrated
+  Circuits and Systems, Vol.28, No.6, JUNE 2009}
+    \field{pages}{901\bibrangedash 914}
+    \field{title}{Using Data Compression for Increasing Memory System
+  Utilization}
+    \field{year}{2009}
+  \endentry
+
+  \entry{KSKO2017}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KSTOTYKO}{%
+         family={Kohta\bibnamedelima Shigenobu},
+         familyi={K\bibinitperiod\bibinitdelim S\bibinitperiod},
+         suffix={Kanemitsu\bibnamedelima Ootsu},
+         suffixi={K\bibinitperiod\bibinitdelim O\bibinitperiod},
+         given={Takeshi Ohkawa Takashi\bibnamedelima Yokota},
+         giveni={T\bibinitperiod\bibinitdelim O\bibinitperiod
+  T\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KSKOTOTY1}
+    \strng{fullhash}{KSKOTOTY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2017 Fifth International Symposium on Computing and
+  Networking}
+    \field{pages}{575\bibrangedash 579}
+    \field{title}{A Translation Method of ARM Machine Code to LLVM-IR for
+  Binary Code Parallelization and Optimization}
+    \field{year}{2017}
+  \endentry
+
+  \entry{MTK2011}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MTSC}{%
+         family={Manjunath\bibnamedelima T.K},
+         familyi={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+         given={Sharmila\bibnamedelima Chidaravalli},
+         giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MTSC1}
+    \strng{fullhash}{MTSC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2011 IEEE 3rd International Conference on Communication
+  Software and Networks}
+    \field{pages}{418\bibrangedash 422}
+    \field{title}{Static Analysis of Designing A Compiler Tool That Generates
+  Machine Codes for The Predicted Execution Path: A Bypass Compiler}
+    \field{year}{2011}
+  \endentry
+\enddatalist
 \endinput

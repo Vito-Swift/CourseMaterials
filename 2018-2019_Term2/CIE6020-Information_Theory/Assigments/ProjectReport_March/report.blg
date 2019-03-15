@@ -18,47 +18,142 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: report-blx.bib
 Database file #2: IT.bib
+I was expecting a `,' or a `}'---line 3 of file IT.bib
+ :   title={Compiled Code Compression for Embedded Systems using Evolutionary Computing}
+ :                                                                                      .
+I'm skipping whatever remains of this entry
 Biblatex version: 3.8
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2637 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2637 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2637 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2643 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2643 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2643 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2651 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2651 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2651 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2657 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2657 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2657 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2661 of file biblatex.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 1 entry,
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 2749 of file biblatex.bst
+You've used 6 entries,
             6268 wiz_defined-function locations,
-            1177 strings with 8554 characters,
-and the built_in function-call counts, 1205 in all, are:
-= -- 58
-> -- 52
-< -- 1
-+ -- 37
-- -- 22
-* -- 24
-:= -- 275
+            1207 strings with 9518 characters,
+and the built_in function-call counts, 24957 in all, are:
+= -- 1824
+> -- 351
+< -- 92
++ -- 353
+- -- 106
+* -- 1788
+:= -- 2420
 add.period$ -- 0
-call.type$ -- 1
-change.case$ -- 0
+call.type$ -- 6
+change.case$ -- 45
 chr.to.int$ -- 30
-cite$ -- 0
-duplicate$ -- 11
-empty$ -- 87
-format.name$ -- 0
-if$ -- 266
+cite$ -- 10
+duplicate$ -- 1967
+empty$ -- 2706
+format.name$ -- 180
+if$ -- 5439
 int.to.chr$ -- 0
-int.to.str$ -- 0
+int.to.str$ -- 10
 missing$ -- 0
-newline$ -- 20
-num.names$ -- 0
-pop$ -- 40
+newline$ -- 108
+num.names$ -- 169
+pop$ -- 1684
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 57
 quote$ -- 0
-skip$ -- 67
+skip$ -- 732
 stack$ -- 0
-substring$ -- 110
-swap$ -- 1
-text.length$ -- 14
+substring$ -- 3786
+swap$ -- 483
+text.length$ -- 95
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 22
+type$ -- 192
 warning$ -- 0
-while$ -- 45
+while$ -- 219
 width$ -- 0
-write$ -- 20
+write$ -- 103
+(There were 46 error messages)
