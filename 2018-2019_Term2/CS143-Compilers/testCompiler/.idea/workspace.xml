@@ -11,7 +11,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d956720-2e17-421e-afd1-bc0c2b3ae67a" name="Default Changelist" comment="" />
+    <list default="true" id="4d956720-2e17-421e-afd1-bc0c2b3ae67a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../CIE6020-Information_Theory/Assigments/ProjectReport_March/report.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../../CIE6020-Information_Theory/Assigments/ProjectReport_March/report.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CIE6020-Information_Theory/Assigments/ProjectReport_March/report.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/../../CIE6020-Information_Theory/Assigments/ProjectReport_March/report.bbl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CIE6020-Information_Theory/Assigments/ProjectReport_March/report.blg" beforeDir="false" afterPath="$PROJECT_DIR$/../../CIE6020-Information_Theory/Assigments/ProjectReport_March/report.blg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CIE6020-Information_Theory/Assigments/ProjectReport_March/report.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../CIE6020-Information_Theory/Assigments/ProjectReport_March/report.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CIE6020-Information_Theory/Assigments/ProjectReport_March/report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../CIE6020-Information_Theory/Assigments/ProjectReport_March/report.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CIE6020-Information_Theory/Assigments/ProjectReport_March/report.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../../CIE6020-Information_Theory/Assigments/ProjectReport_March/report.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CIE6020-Information_Theory/Assigments/ProjectReport_March/report.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../CIE6020-Information_Theory/Assigments/ProjectReport_March/report.tex" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +32,7 @@
     <session id="-1866666197">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.opened" value="2" />
@@ -71,8 +80,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/testKaleidoscope.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+            <state relative-caret-position="315">
+              <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+              <folding>
+                <element signature="e#41#88#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,7 +130,7 @@
       <path value="$PROJECT_DIR$/llvm/utils/vscode/tablegen/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="5">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1920" />
     <option name="width" value="1288" />
     <option name="height" value="1440" />
@@ -221,15 +233,15 @@
       <option name="presentableId" value="Default" />
       <updated>1552236457080</updated>
       <workItem from="1552236458262" duration="700000" />
-      <workItem from="1552294912914" duration="4621000" />
+      <workItem from="1552294912914" duration="5216000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5321000" />
+    <option name="totallyTimeSpent" value="5916000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="0" width="1288" height="1440" extended-state="5" />
+    <frame x="1920" y="0" width="2560" height="1440" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.095623985" />
@@ -276,8 +288,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/testKaleidoscope.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        <state relative-caret-position="315">
+          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding>
+            <element signature="e#41#88#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

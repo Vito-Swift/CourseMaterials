@@ -1,10 +1,17 @@
 \documentclass[]{article}
 \usepackage{amsmath,amssymb,amsfonts,amsbsy}
-%\usepackage{fancybox}
-%\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{fancybox}
+\usepackage{graphicx}
 \usepackage{soul,soulutf8}
 \usepackage{url,color}
 \usepackage{fullpage}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+
+\usetikzlibrary{shapes, arrows}
 
 \usepackage[autocite=footnote,
     backend=bibtex,
@@ -26,13 +33,28 @@
 %\newcommand{\tr}{\mathrm{tr}}
 \renewcommand{\st}{\mathrm{s.t.}}
 
-%\usepackage[toc]{multitoc}
+% Define block styles
+\tikzstyle{decision} = [diamond, draw, fill=blue!20, 
+text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, 
+text width=6em, text centered, rounded corners, minimum height=4em, minimum width=8em, scale=.6]
+
+\tikzstyle{blockq} = [rectangle, draw, fill=red!20, 
+text width=6em, text centered, rounded corners, minimum height=4em, minimum width=8em, scale=.6]
+
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
+minimum height=2em]
+
+%\usepackage[toc]{multitoc}\begin{minipage}{.6\textwidth}
+
+
 \begin{document}
 
 %Enter your title here
-\title{Profile-Guided Source Coding on Dual-Compilation}
+\title{Profile-Guided Source Coding in Dual-Compilation}
 %Enter your name Here
-\author{WU, Chenhao}
+\author{Chenhao, WU}
 \date{}
 
 \makeatletter
@@ -43,7 +65,7 @@
 \begin{titlepage}
 \centering
 {   \textsc{\Large CIE 6020 Information Theory (Spring, 2018)}\\[0.5 cm]}
-{\Large\bf Course Report: \inserttitle}\\[.2in]
+{\Large\bf Course Project: \inserttitle}\\[.2in]
 Name: \underline{\quad\quad \insertauthor \quad\quad  
 }
 \hspace{0.3in}
@@ -82,37 +104,98 @@ Academic Misconduct in any form is in violation of CUHK(SZ)'s Student Disciplina
 \maketitle
 
 \begin{abstract}
-Type your abstract about this report here.  
+
 \end{abstract}
 
-\section{What should you write?}
-Read several papers related to information theory in general, and
-write a reading report. For example, Shannon's 1948 paper
-\cite{shannon1948}, and some recent papers about machine learning \cite{feizi2017understanding,farias2010universal}.
+\section{Introduction}
+Within this decade, the computing performance of mobiles and embedded systems have been significantly raised such that more computing workloads can be undertaken on mobiles and embedded systems, such as digital image processing, augmented-reality applications, and so on. In practice, one of the critical bottlenecks in mobiles and embedded systems design and optimization is the run-time memory space and power consumption. Since the complexity of program and data set grew much faster than the performance of memory capacity in the mobile and embedded system, rather than merely use expensive computing components to feed the needs of applications with high computing overhead, it is more promising to find ways to best utilize the system use of memory space. To realize this objective, we proposed a profile-guided source coding (PGSC), which will perform an adaptive compiler-guided data compression on memory space during run-time according to different applications and run-time environment. \par 
 
-For example, you may write a summary of the research in the papers
-using your own words. It is better that you can have your own
-reflection. 
+\begin{figure}[H]
+\begin{minipage}[h][8cm][s]{.27\textwidth}
+	\centering
+	\vfill
+	\begin{tikzpicture}[node distance = 2cm, auto]
+	
+	% Place nodes
+	\node [block] 								(Source Code) 					{Source Code};
+	\node [block, below of=Source Code] 		(Compiler Frontend)  			{Compiler Frontend};
+	\node [block, below of=Compiler Frontend, yshift=-0.5cm] (IR)				{Intermediate Representation};
+	\node [block, below of=IR, yshift=-0.5cm]	(Compiler Backend)				{Compiler Backend};
+	\node [block, below of=Compiler Backend]	(Binary Executable)				{Binary Executable};
+	
+	%Draw edges
+	\path [line] (Source Code) 		    -- 										(Compiler Frontend);
+	\path [line] (Compiler Frontend)    -- node {\scriptsize Optimization} 		(IR);
+	\path [line] (IR) 					-- node {\scriptsize Optimization} 		(Compiler Backend);
+	\path [line] (Compiler Backend)		--										(Binary Executable);
+	
+	\end{tikzpicture}
+	
+	\vfill
+	\caption{Traditional Compilation Procedure}
+	\label{fig:compil}
+	
+	\vspace{\baselineskip}
+\end{minipage}\qquad
+\begin{minipage}[h][8cm][s]{.35\textwidth}
+	\centering
+	\vfill
+	\begin{tikzpicture}[node distance = 2cm, auto]
+	
+	% Place nodes
+	\node [block] 								(Source Code) 					{Source Code};
+	\node [block, below of=Source Code] 		(Compiler Frontend)  			{Compiler Frontend};
+	\node [block, below of=Compiler Frontend, yshift=-0.5cm] (IR)				{Intermediate Representation};
+	\node [block, below of=IR, yshift=-0.5cm]	(Compiler Backend)				{Compiler Backend};
+	\node [block, below of=Compiler Backend]	(Binary Executable)				{Binary Executable};
+	\node [blockq, left of=Compiler Backend, xshift=-4cm] (SR)				{Sample runs};
+	\node [blockq, left of=Binary Executable, xshift=-4cm] (Re-Compile)		{Re-compile};
+	
+	%Draw edges
+	\path [line] (Source Code) 		    -- 										(Compiler Frontend);
+	\path [line] (Compiler Frontend)    -- node {\scriptsize Optimization} 		(IR);
+	\path [line] (IR) 					-- node {\scriptsize Optimization} 		(Compiler Backend);
+	\path [line] (Compiler Backend)		-- node[above, align=center] {\scriptsize Instrumented\\ \scriptsize executable} (SR);
+	\path [line] (SR)					-- 									    (Re-Compile);
+	\path [line] (Re-Compile)			-- node {\scriptsize Profile-Guided}	(Binary Executable);
+	
+	\end{tikzpicture}
+	\vfill
+	\caption{Compilation Procedure with PGO}
+	\label{fig:compilpgo}
+\end{minipage}\qquad
+\begin{minipage}[h][8cm][s]{.3\textwidth}
+	\centering
+	\vfill
+	\begin{tikzpicture}[node distance = 2cm, auto]
+	
+	% Place nodes
+	\node [block] 								(Source Code) 					{Source Code};
+	\node [block, below of=Source Code] 		(IE) 					 		{Instrumented Executable};
+	\node [blockq, below of=IE] 				(SR)							{Sample runs};
+	\node [block, below of=SR] 					(Re-Compiled Executable)		{Re-Compiled Executable};
+	\node [blockq, below of=Re-Compiled Executable, yshift=-0.5cm] (RC)							{Run-time Compression on Memory Space};	
+	\node [label, right of=Re-Compiled Executable, xshift=0.5cm]								(PF)							{\scriptsize Profile-Guided};
+	
+	%Draw edges
+	\path [line] (Source Code) 		    -- 										(IE);
+	\path [line] (IE) 					-- 										(SR);
+	\path [line] (SR)					--									 	(Re-Compiled Executable);
+	\path [line] (Re-Compiled Executable) --									(RC);
+	\path [line] (SR)					--++ (1.5, 0)  |-						(RC);
+	
+	\end{tikzpicture}
+	\vfill
+	\caption{Profile-Guided Source Coding}
+	\label{fig:compilpgosrc}
+\end{minipage}
+\end{figure}
 
+The idea of this approach comes from a modern compilation technique, Profiled-Guided Optimization (PGO), that as shown in Figure 1 and Figure 2, differed from traditional approach, the compiler will perform a recompilation based on initial executable and sample runs. A profile, for instance, breaks the source code into blocks and devises a table of the frequency each block is executed via sample runs, and during recompilation, code blocks will be reordered with respect to the frequency table. For example, blocks with higher frequency will be allocated in memory area with lower memory address and blocks with lower frequency will be allocated in higher address so that the additional I/O overhead consumed in function callbacks will be reduced. Similar to previous compiler optimization methods, like the deletion of unreachable code, the constant folding optimization and propagation optimization, the objective of PGO is to further reduce the redundancy of unnecessary and/or unimportant logic branches in the source program. \par 
+The usage of this approach, however, can be extended into attempts to reduce the memory space, that after sample runs, not only the frequency of code blocks can be collected, but also the preliminary investigation of frequency that each block of memory is accessed can be gathered. As shown in Figure 3, the procedure of PGSC consists of a dual-stage compilation, that the compiler will initially compile the source code into an instrumented executable, and based on a profile generated after sample runs, the compiler will re-compile the source code such that during the run-time, the program will compress specific areas of memory space in order to reduce the redundancy of memory use, and will instantaneously decompress the compressed contents whenever the program needs. \par 
+In the trend that more and more mobile applications buffer long arrays of audio, images and video clips into the memory space during run-time, compared with the static data compression and the original version of PGO, .
 
-
-
-\section{What kinds of papers should you choose?}
-You may select papers from our reading list, or choose other papers that closely related to information theory.
-
- 
-
-\section{PDF requirements}
-\emph{Please typeset your report using LaTex.} Only electronic submissions in form of a PDF file will be
-accepted. The PDF file has to be PDF/A compliant. A common problem is
-missing fonts. Make sure that all fonts are embedded. (In some cases,
-printing a PDF to a PostScript file, and then creating a new PDF with
-Acrobat Distiller, may do the trick.)
-
-
-\section{Conclusion}
-Write your conclusion here.
-
+\section{Related Works}
 
 \printbibliography
 
