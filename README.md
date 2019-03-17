@@ -48,6 +48,6 @@ I am currently a Computer Science student in CUHK(SZ), and this repository store
 
 ---
 
-## Couses Taken Online
+## Courses Taken Online
 
 - [CS143 - Compilers](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Term2/CS143-Compilers)
