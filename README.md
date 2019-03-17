@@ -13,9 +13,9 @@ I am currently a Computer Science student in CUHK(SZ), and this repository store
 
 ### Computer Science
 
-- CSC1001 - Introduction to Computer Science (*Not Uploaded*)
+- CSC1001 - Introduction to Computer Science \*
 
-- CSC1002 - Computer Laboratory (*Not Uploaded*)
+- CSC1002 - Computer Laboratory \*
 
 - [CSC3001 - Discrete Mathematics](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Term1/CSC3001-Discrete_Mathematics)
 
@@ -28,6 +28,10 @@ I am currently a Computer Science student in CUHK(SZ), and this repository store
 - [EIE2050 - Digital Logic and Systems](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Term1/EIE2050-Digital_Logic_and_Systems)
 
 ### Mathematics
+
+- MAT1001 - Calculus I \*
+
+- MAT1002 - Calculus II \*
 
 - [MAT2040 - Linear Algebra](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Term1/MAT2040-Linear_Algebra)
 - [MAT3350 - Information Theory](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Term2/CIE6020-Information_Theory)
