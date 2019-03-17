@@ -13,9 +13,9 @@ I am currently a Computer Science student in CUHK(SZ), and this repository store
 
 ### Computer Science
 
-- CSC1001 - Introduction to Computer Science
+- CSC1001 - Introduction to Computer Science (*Not Uploaded*)
 
-- CSC1002 - Computer Laboratory
+- CSC1002 - Computer Laboratory (*Not Uploaded*)
 
 - [CSC3001 - Discrete Mathematics](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Term1/CSC3001-Discrete_Mathematics)
 
