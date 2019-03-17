@@ -30,6 +30,7 @@ I am currently a Computer Science student in CUHK(SZ), and this repository store
 ### Mathematics
 
 - [MAT2040 - Linear Algebra](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Term1/MAT2040-Linear_Algebra)
+- [MAT3350 - Information Theory](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Term2/CIE6020-Information_Theory)
 
 ### Philosophy
 
