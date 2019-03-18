@@ -34,6 +34,7 @@ I am currently a Computer Science student in CUHK(SZ), and this repository store
 - MAT1002 - Calculus II\*
 
 - [MAT2040 - Linear Algebra](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Term1/MAT2040-Linear_Algebra)
+
 - [MAT3350 - Information Theory](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Term2/CIE6020-Information_Theory)
 
 ### Philosophy
@@ -42,14 +43,37 @@ I am currently a Computer Science student in CUHK(SZ), and this repository store
 
 - [PHI2112 - Theory of Knowledge](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Term2/PHI2112-Theory_of_Knowledge)
 
+### Statistics
+
+- STA2001 - Probability and Statistics I\*
+
+### Physics
+
+- PHY1001 - Mechanics\*
+
+- [PHY1002 - Physics Laboratory](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Term1/PHY1002-Physics_Laboratory)
+
+### Chemistry
+
+- CHM1001 - General Chemistry\*
+
 ### Academic English
 
 - [ENG2001 - English for Academic Purpose](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Term1/ENG2001-English_for_Academic_Purpose)
+
 - [ENG2002S - English for Science and Engineering Communication](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Term2/ENG2002S-English_for_Science%26Engineering_Comm.)
 
 ### Biology
 
 - [BIO2001 - General Biology](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Term2/BIO2001-General_Biology)
+
+### General Education
+
+- CHI1000 - University Chinese\*
+
+- GFH1000 - In Dialogue with Humanity\*
+
+- GEA2001 - Mordern Chinese History and Culture\*
 
 ---
 
