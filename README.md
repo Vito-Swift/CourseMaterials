@@ -60,7 +60,6 @@ I am currently a Computer Science student in CUHK(SZ), and this repository store
 ### Academic English
 
 - [ENG2001 - English for Academic Purpose](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Term1/ENG2001-English_for_Academic_Purpose)
-
 - [ENG2002S - English for Science and Engineering Communication](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Term2/ENG2002S-English_for_Science%26Engineering_Comm.)
 
 ### Biology
