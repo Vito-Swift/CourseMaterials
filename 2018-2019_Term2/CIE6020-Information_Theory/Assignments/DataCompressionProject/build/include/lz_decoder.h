@@ -1,0 +1,9 @@
+//
+// Created by vitowu on 3/2/19.
+//
+
+#ifndef PROJECT_LEMPEL_ZICDECODER_H
+#define PROJECT_LEMPEL_ZICDECODER_H
+
+
+#endif //PROJECT_LEMPEL_ZICDECODER_H
