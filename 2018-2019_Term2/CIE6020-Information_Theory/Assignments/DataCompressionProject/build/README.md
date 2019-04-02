@@ -132,9 +132,9 @@ Since that the encoding method is algorithmically invertible, the program can pe
 
 
 
-#### IV. Huffman Coding Based on Semantic Statistics
+#### IV. Huffman Coding Based on Lexical Analysis
 
-A revised version of Huffman Coding proposed in this project is to analysis the *statistical semantic characteristics* of source text before compression.
+A revised version of Huffman Coding proposed in this project is to analysis the *statistical lexical characteristics* of source text before compression.
 
 As what being discussed in Huffman Coding sections above, the traditional Huffman Coding methods treat the text as a sequence of individual units, which might be letter, word, dual-word, and so on, and assign the prefix code by respective frequency. By using Huffman Coding we can achieve the optimal code since `H(X) <= L(C) <= H(X) + 1` for corresponding distribution. For dual-letter groups in English language, however, if the first letter has been given, with high probability the set we choose the second letter is merely a subset of English Alphabet. For instance, if we have the first letter be *a*, then less-likely the second the letter is also an *a*, so does *k*, *z*,... At the same time, the probability of an *b*, *d*, *s*, *n*... might be higher since we have more words start or end with *ab* *ad*, *as*, *an*...
 
@@ -199,7 +199,7 @@ The expected code word length is much fewer than the Huffman Coding before. Noti
 
 
 
-#### Huffman Coding Based on Semantic Statistics
+#### Huffman Coding Based on Lexical Analysis
 
 | File Name      | Original Size | Compressed Size (Include Dictionary) | Rate   |
 | -------------- | ------------- | ------------------------------------ | ------ |
@@ -226,13 +226,13 @@ The expected code word length is much fewer than the Huffman Coding before. Noti
 
 ### Discussion
 
-In this data compression project we have wrote programs for each compression method, and then tested the performance by compressing text files. Included methods are *Huffman Coding on letter*, *Huffman Coding on word*, *LZ Coding*, *Huffman Coding on Semantic Stats*, and *System Compression Tool on Ubuntu*. 
+In this data compression project we have wrote programs for each compression method, and then tested the performance by compressing text files. Included methods are *Huffman Coding on letter*, *Huffman Coding on word*, *LZ Coding*, *Huffman Coding on Lexical Anal*, and *System Compression Tool on Ubuntu*. 
 
 As shown above, we found that the performance of Huffman Coding on letter are approximately the same for the English language. Huffman Coding on words works slightly better than the former one, and achieved a significant better performance on text with small words set like `bible.txt` . 
 
 For Zip and LZ Coding, since they based on the same compression mechanism, the performance of them are very closed. For files with longer length, the lower compression rates can be achieved. 
 
-For Huffman Coding based on Semantic Statistics, it can *achieve an lowest average compression rate among these methods*, ranging from 18.25% - 20.95%. Since the key of codebook is based on letter-level semantics, the dictionary size is also bounded within 5 KB - 10 KB.
+For Huffman Coding based on Lexical Analysis, it can *achieve an lowest average compression rate among these methods*, ranging from 18.25% - 20.95%. Since the key of codebook is based on letter-level lexical rules the dictionary size is also bounded within 5 KB - 10 KB.
 
 ---
 
