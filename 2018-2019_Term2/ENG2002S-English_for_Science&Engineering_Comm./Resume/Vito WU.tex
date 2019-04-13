@@ -1,0 +1,210 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex, hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+%\usepackage[charter]{mathdesign} % Bitstream Charter
+% \usepackage{newpxtext,newpxmath} % Palatino
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.50in}
+\addtolength{\evensidemargin}{-0.50in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+	\item\small{
+		\textbf{#1}{: #2 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeItemNoBullet}[2]{
+	\item[]\small{
+		\hspace{-9pt}\textbf{#1}{: #2 \vspace{-6pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-1pt}\item[]
+	\begin{tabular*}{0.98\textwidth}{l@{\extracolsep{\fill}}r}
+		\hspace{-10pt}\textbf{#1} & #2 \\
+		\hspace{-10pt}\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% custom commands
+\newcommand{\shorterSection}[1]{\vspace{-10pt}\section{#1}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+	
+	%----------HEADING-----------------
+	\begin{center}
+		\small \textbf{\href{http://vitowu.cn}{\huge Chenhao WU (Vito)}} \\  \href{mailto:chenhaowu@link.cuhk.edu.cn}{\color{blue}\underline{chenhaowu@link.cuhk.edu.cn}} $\vert$
+		(86)13799430816 \\
+		LinkedIn: \href{https://www.linkedin.com/in/vito-wu-56036a159/}{\color{blue}\underline{Vito WU}} $\vert$
+		Personal Website: \href{http://www.vitowu.cn}{\color{blue}\underline{vitowu.cn}} $\vert$ Github: \href{https://github.com/Vito-Swift}{\color{blue}\underline{Vito-Swift}} \\
+		\small 2001 Longxiang Road, Shenzhen, Guangdong, China, 518172
+	\end{center}
+	
+	%-----------EDUCATION-----------------
+	\shorterSection{Education}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{The Chinese University of Hong Kong, Shenzhen}{Guangdong, China}
+	{Bachelor of Engineering, Major in Computer Science and Engineering, Minor in Philosophy}{Expected May 2021}{
+		%\resumeItemNoBullet{Thesis}{Invariant Kernels for Few-shot Learning}
+		\resumeItemNoBullet{Relevant Coursework}{Information Theory, Coding Theory, Data Compression, Fundamentals of Communication, Software Development, Computer Networking, Computer Architecture, Applications on IoT}
+	}
+	\resumeSubHeadingListEnd
+	
+	%-----------SKILLS-----------------
+	\shorterSection{Skills}
+	\resumeSubHeadingListStart
+	\small
+	\item{
+		\textbf{Programming Languages}{: C/C++, LLVM, Assembly, Python, Swift,  Julia, LaTeX, HTML, CSS, JavaScript}
+	}
+	\vspace{-5pt}
+	\item{
+		\textbf{Computer Related}{: Raspberry PI, Arduino, Zigbee, Linux(kernel level), iOS Software, WeChat Mini-program, Compiler Design, Valgrind, Qt/GTK-based GUI Application, Git}
+	}
+	\vspace{-5pt}
+	\item{
+		\textbf{Interpersonal Skills}{: Public Speaking, Teamwork}
+	}
+	\resumeSubHeadingListEnd
+	
+	%-----------LANGS------------------
+	\shorterSection{Languages}
+	\resumeSubHeadingListStart
+	\small
+	\item{
+		\textbf{Mandarin}: native speaker
+	}
+	\vspace{-5pt}
+	\item{
+		\textbf{English}: professional and academical communications
+	}
+	\resumeSubHeadingListEnd
+	
+	%-----------EXPERIENCE-----------------
+	\shorterSection{Experience}
+	\resumeSubHeadingListStart
+	
+	\resumeSubheading
+	{Shenzhen Key Laboratory of IoT Intelligent System and Wireless Network Technology}{Guangdong, China}
+	{Undergraduate Research Assistant}{Sep 2018 - Present}
+	\resumeItemListStart
+	\resumeItem{Smart Lamp-post}
+	{Designed and trained a shallow CNN to classify rotated images. Achieved F1-score of 0.99 on test set of 1M+ images}
+	\resumeItem{BATS Protocol}
+	{A computer vision model to classify views of automobile images
+		\begin{itemize}
+			\item Implement the routing table of BATS protocol
+			\item Design and implement the dynamic address assignment algorithms of BATS protocol
+			\item Reduced model complexity and size by 40\% by freezing model and performing post-training quantization
+		\end{itemize}
+	}
+	\resumeItem{Multi-hop Video Streaming}
+	{A computer vision model to determine if image is total loss or repairable
+		\begin{itemize}
+			\item Trained ensemble of CNN architectures on 1M+ automobile images to classify vehicles as total loss or repairable resulting in 25\% higher weighted F1-score and 60\% decrease in model size compared to older iteration
+			\item Incorporated first notice of loss information using NLP to increase  F1-score by 10\%
+		\end{itemize}
+	}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{CUHK(SZ) Network Coding Lab}{Guangdong, China}
+	{Undergraduate Research Intern}{May 2018 - Aug 2018}
+	\resumeItemListStart
+	\resumeItem{Optimal Node Search}
+	{Implemented Dijkstra's algorithm on 10K+ network nodes to find shortest path for signal propagation resulting in 25\% reduction in costs}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{Fujian Daily Group}{Fujian, China}
+	{Summer Intern}{Jane 2017 - Aug 2017}
+	\resumeItemListStart
+	\resumeItem{Squeek Twitter iOS}
+	{Designed and developed Twitter client using Fabric SDK}
+	\resumeItemListEnd
+	
+	\resumeSubHeadingListEnd
+	
+	%-----------PROJECTS-----------------
+	\shorterSection{Projects}
+	\resumeSubHeadingListStart
+	\resumeSubItem{OCR using Conditional Random Fields}
+	{A probabilistic graphical model for sequential character recognition
+		\vspace{-5pt}
+		\begin{itemize}
+			\item Implemented a CRF in $O(m|\mathcal{Y}|^2)$ time to achieve a 84\% letter-wise accuracy on UPenn OCR dataset
+			\item Implemented OpenMPI CRF using PETSc and Tao to achieve 77.1\% letter-wise accuracy
+		\end{itemize}
+	}
+	\resumeSubItem{ARYouThereYet}{An augmented reality application developed on ARKit with dynamic AR nodes}
+	\resumeSubItem{Aspect-based Sentiment Analysis}
+	{Implemented Deep Memory Networks to achieve 78.66\% accuracy, 0.69 F1-score on SemEval 2014 dataset}
+	\resumeSubItem{Iris Speech to Code}
+	{A natural speech to code converter for aiding programmers with disabilities
+		\vspace{-5pt}
+		\begin{itemize}
+			\item Trained an intent classification model in Microsoft Luis to classify 15+ classes or commands
+			\item Implemented a message passing protocol using RabbitMQ to broker messages between Google API, ElectronJS, and VS Code
+		\end{itemize}
+	}
+	\resumeSubItem{AI Lifeguard}{Trained a 3D-CNN model on Microsoft Azure for action localization on drowning people in swimming pools. Achieved mean IOU score of 0.45}
+	\resumeSubHeadingListEnd
+	
+	%-----------Addtional Experience & Achievements-----------------
+	\shorterSection{Additional Experience \& Achievements}
+	\resumeSubHeadingListStart
+	\small
+	\item{Presented a {multi-hop video streaming demo} on \textit{Practical Inner Codes for BATS Codes in Multi-hop Wireless Networks} at \textbf{ACM WUWNet 2018}}
+	\vspace{-5pt}
+	\item{Won \textbf{Undergraduate Research Award} in The Chinese University of Hong Kong, Shenzhen}
+	
+	\resumeSubHeadingListEnd
+	%-------------------------------------------
+\end{document}
