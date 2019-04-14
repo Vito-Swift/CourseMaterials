@@ -32,6 +32,25 @@
 
 \begin{document}
 	\maketitle
+	~\\\
+	\textbf{1.}\\
+	\textbf{Constraint: } (i). $1-p_1 = P_e$ (ii). $\sum_i p_i = 1$\\
+	\textbf{Object: } maximize $H(p)$ \\
+	Construct a Lagrangian function and we have
+	\begin{align*}
+		L(\lambda, p) &= -\sum_{p_i\in\textbf{p}, i\not = 1} p_i\log p_i - (1-P_e)\log(1-P_e)+\lambda(\sum_{p_i\in\textbf{p},i\not=1}p_i-P_e) \\
+		\frac{\partial L}{\partial p_i} &= 1 - \log p_i + \lambda
+	\end{align*}
+	Let the derivative equal to zero, we have $p_i = e^{\lambda+1}$, and by constraint (i)
+	\begin{align*}
+		\sum_{p_i\in\textbf{p},i\not=1}p_i-P_e &= P_e \\
+		\lambda &= \log(\frac{P_e}{m-1}) - 1
+	\end{align*} 
+	thus
+	\begin{align*}
+		H(p) &\leq -(1-P_e)\log(1-P_e) + P_e\log\frac{m-1}{P_e} \\
+			 &= H(P_e) + P_e\log(m-1)
+	\end{align*}
 	\textbf{2.} Assume that $p_X(1) = \lambda$, and then we have
 		\begin{align*}
 			p_Y(0) &= - \lambda + \lambda p + 1 \\
@@ -55,7 +74,10 @@
 			\log\frac{p\lambda}{(p-1)\lambda+1} &= \frac{2}{(p-1)\lambda+1} 
 		\end{align*}
 		to maximize the mutual information of input and output. \\
-		When input probability distribution satisfies the equation above, the channel capacity can be achieved as \\
+		When input probability distribution satisfies the equation above, the channel capacity can be achieved as 
+		\begin{align*}
+			C = \log(1+2^{-H(p)/(1-p)})
+		\end{align*}
 	
 	\textbf{3.} 
 	\begin{align*}
@@ -102,10 +124,10 @@
 	\begin{align*}
 		I(X^\prime;Y^\prime) &= H(Y^\prime) - H(Y^\prime|X^\prime) \\
 							 &= H(Y^\prime) - \sum_{x\in\mathcal{X}^\prime}p(x)H(Y|x) \\
-							 &= H(Y^\prime) - H(q) \\
-							 &\leq 1 - H(q) 
+							 &= H(Y^\prime) - \frac{1}{2}H(q) \\
+							 &\leq 1 - \frac{1}{2}H(q) 
 	\end{align*}
 	(d) Assume that we have a set of capacity achieving codes for the memoryless BSC under the condition of (a), without losing the generality, we can expand it to the channel under the condition of (b). Notice that, $ \mathbf{X}_1 = \{00, 11\} $ can only output $ \mathbf{Y}_1 = \{00, 11\} $, and $\mathbf{X}_2 = \{01, 10\}$ can only output $\mathbf{Y}_2 = \{01, 10\}$. With this understanding, we can apply the capacity achieving codes onto the input sets $\mathbf{X}_1$ and $ \mathbf{X}_2 $ respectively, and the combination of the codes can also achieve the channel capacity under the condition of (b). \\
 	
-	\textbf{5.}
+	\textbf{5.} Any optimal encoding method that achieves the minimal entropy rate over the input sequence can construct a Weak Typical Set. Also, a weak typical set satisfies the requirements by the \textbf{WAEP II}, and therefore one optimal encoding method corresponds to a set that can achieves the constraints. 
 \end{document}
