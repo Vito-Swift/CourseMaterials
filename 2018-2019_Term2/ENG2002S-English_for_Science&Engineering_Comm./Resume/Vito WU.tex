@@ -115,17 +115,6 @@
 	\resumeSubHeadingListEnd
 	
 	%-----------LANGS------------------
-	\shorterSection{Languages}
-	\resumeSubHeadingListStart
-	\small
-	\item{
-		\textbf{Mandarin}: native speaker
-	}
-	\vspace{-5pt}
-	\item{
-		\textbf{English}: professional and academical communications
-	}
-	\resumeSubHeadingListEnd
 	
 	%-----------EXPERIENCE-----------------
 	\shorterSection{Experience}
@@ -136,20 +125,20 @@
 	{Undergraduate Research Assistant}{Sep 2018 - Present}
 	\resumeItemListStart
 	\resumeItem{Smart Lamp-post}
-	{Designed and trained a shallow CNN to classify rotated images. Achieved F1-score of 0.99 on test set of 1M+ images}
+	{Designed and assembled a set of IoT devices which can be installed and embedded in the street-side lampposts. The devices can form a network by using both wireless and wired connections, with capability to transmit data from node to node, such as streaming video frame captured from cameras. }
 	\resumeItem{BATS Protocol}
-	{A computer vision model to classify views of automobile images
+	{A multi-hop wireless network protocol to achieve low latency and less packet-loss during transmission
 		\begin{itemize}
-			\item Implement the routing table of BATS protocol
-			\item Design and implement the dynamic address assignment algorithms of BATS protocol
-			\item Reduced model complexity and size by 40\% by freezing model and performing post-training quantization
+			\item Implemented the routing scheme and the routing table of BATS protocol.
+			\item Designed and implemented the dynamic address assignment algorithms of BATS protocol.
+			\item Designed and implemented the \textit{Network Controller} module of BATS protocol, which handles the network level BATS protocol information like the network addresses and the routes.
 		\end{itemize}
 	}
 	\resumeItem{Multi-hop Video Streaming}
-	{A computer vision model to determine if image is total loss or repairable
+	{An application that can play video streaming from cameras installed in remote devices by using a multi-hop wireless network
 		\begin{itemize}
-			\item Trained ensemble of CNN architectures on 1M+ automobile images to classify vehicles as total loss or repairable resulting in 25\% higher weighted F1-score and 60\% decrease in model size compared to older iteration
-			\item Incorporated first notice of loss information using NLP to increase  F1-score by 10\%
+			\item The application supports BATS protocol and can utilize the best performance of this protocol. The latency of a 5-hop network is less than 1 second.
+			\item The application has been approved and applied by the HK Smart-Lamppost Program.
 		\end{itemize}
 	}
 	\resumeItemListEnd
@@ -158,16 +147,8 @@
 	{CUHK(SZ) Network Coding Lab}{Guangdong, China}
 	{Undergraduate Research Intern}{May 2018 - Aug 2018}
 	\resumeItemListStart
-	\resumeItem{Optimal Node Search}
-	{Implemented Dijkstra's algorithm on 10K+ network nodes to find shortest path for signal propagation resulting in 25\% reduction in costs}
-	\resumeItemListEnd
-	
-	\resumeSubheading
-	{Fujian Daily Group}{Fujian, China}
-	{Summer Intern}{Jane 2017 - Aug 2017}
-	\resumeItemListStart
-	\resumeItem{Squeek Twitter iOS}
-	{Designed and developed Twitter client using Fabric SDK}
+	\resumeItem{Access Point in Multi-hop Networks}
+	{Implemented an application which can enable Wi-Fi sharing point on devices in a multi-hop network.}
 	\resumeItemListEnd
 	
 	\resumeSubHeadingListEnd
@@ -175,26 +156,29 @@
 	%-----------PROJECTS-----------------
 	\shorterSection{Projects}
 	\resumeSubHeadingListStart
-	\resumeSubItem{OCR using Conditional Random Fields}
-	{A probabilistic graphical model for sequential character recognition
+	\resumeSubItem{Tina}
+	{ A facial-recognition based smart lock system with an audio assistant
 		\vspace{-5pt}
 		\begin{itemize}
-			\item Implemented a CRF in $O(m|\mathcal{Y}|^2)$ time to achieve a 84\% letter-wise accuracy on UPenn OCR dataset
-			\item Implemented OpenMPI CRF using PETSc and Tao to achieve 77.1\% letter-wise accuracy
+			\item Implemented the facial recognition module of the smart lock using eigen-face algorithms.
+			\item Implemented the audio module to recognize speech and response audibly, which allows users to communicate and interact with the smart lock system.
+			\item Designed the control circuit of the electronic lock and installed in the laboratory
 		\end{itemize}
 	}
-	\resumeSubItem{ARYouThereYet}{An augmented reality application developed on ARKit with dynamic AR nodes}
-	\resumeSubItem{Aspect-based Sentiment Analysis}
-	{Implemented Deep Memory Networks to achieve 78.66\% accuracy, 0.69 F1-score on SemEval 2014 dataset}
-	\resumeSubItem{Iris Speech to Code}
-	{A natural speech to code converter for aiding programmers with disabilities
+
+	\resumeSubItem{Profiled-Guided Source Coding on Compiler Optimization}{A C/C++ compiler which will perform an adaptive compiler-guided data compression on memory space during run-time according to different applications and different run-time environments.}
+	
+	\resumeSubItem{Data Compression based on Lexical Analysis}
+	{Implemented a compression tool based on lexical analysis which achieves a compression rate around 19\% in average.}
+	\resumeSubItem{Drones Routing}
+	{A tool that can control remote drones using multi-hop network
 		\vspace{-5pt}
 		\begin{itemize}
-			\item Trained an intent classification model in Microsoft Luis to classify 15+ classes or commands
-			\item Implemented a message passing protocol using RabbitMQ to broker messages between Google API, ElectronJS, and VS Code
+			\item Allow drones connecting to a multi-hop network.
+			\item Load video streaming from cameras on the remote drones, and play the video on an arbitrary node in the network.
+			\item Control remote drones from an arbitrary node in the network .
 		\end{itemize}
 	}
-	\resumeSubItem{AI Lifeguard}{Trained a 3D-CNN model on Microsoft Azure for action localization on drowning people in swimming pools. Achieved mean IOU score of 0.45}
 	\resumeSubHeadingListEnd
 	
 	%-----------Addtional Experience & Achievements-----------------
@@ -203,8 +187,9 @@
 	\small
 	\item{Presented a {multi-hop video streaming demo} on \textit{Practical Inner Codes for BATS Codes in Multi-hop Wireless Networks} at \textbf{ACM WUWNet 2018}}
 	\vspace{-5pt}
-	\item{Won \textbf{Undergraduate Research Award} in The Chinese University of Hong Kong, Shenzhen}
-	
+	\item{Won the \textbf{Undergraduate Research Award} in the Chinese University of Hong Kong, Shenzhen}
+	\vspace{-5pt}
+	\item{Worked as technique manager in CUHK(SZ) Sudoku Club}
 	\resumeSubHeadingListEnd
 	%-------------------------------------------
 \end{document}
