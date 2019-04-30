@@ -1,0 +1,186 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{CompilerDesign}{book}{}
+    \name{author}{1}{}{%
+      {{hash=AAJURS}{%
+         family={A.\bibnamedelima Aho},
+         familyi={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+         suffix={R.\bibnamedelima Sethi},
+         suffixi={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+         given={J.D.\bibnamedelima Ullman},
+         giveni={J\bibinitperiod\bibinitdelim U\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Addison-Wesley}%
+    }
+    \strng{namehash}{AARSJU1}
+    \strng{fullhash}{AARSJU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Compiler: Principles, Techniques, and Tools}
+    \field{year}{1986}
+  \endentry
+
+  \entry{OO2009}{article}{}
+    \name{author}{1}{}{%
+      {{hash=OOMJIMK}{%
+         family={Ozcan\bibnamedelima Ozturk},
+         familyi={O\bibinitperiod\bibinitdelim O\bibinitperiod},
+         suffix={Mahmut\bibnamedelima Kandemir},
+         suffixi={M\bibinitperiod\bibinitdelim K\bibinitperiod},
+         given={Mary Jan\bibnamedelima Irwin},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OOMKMJI1}
+    \strng{fullhash}{OOMKMJI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{IEEE Transactions on Computer-Aided Design of Intergrated
+  Circuits and Systems, Vol.28, No.6, JUNE 2009}
+    \field{pages}{901\bibrangedash 914}
+    \field{title}{Using Data Compression for Increasing Memory System
+  Utilization}
+    \field{year}{2009}
+  \endentry
+
+  \entry{MSAli2008}{article}{}
+    \name{author}{1}{}{%
+      {{hash=AMS}{%
+         family={Ali},
+         familyi={A\bibinitperiod},
+         given={M\bibnamedelima S},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AMS1}
+    \strng{fullhash}{AMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Fifth International Conference on Infromation Technology:
+  New Generations}
+    \field{pages}{1173\bibrangedash 1174}
+    \field{title}{Compiled Code Compression for Embedded Systems using
+  Evolutionary Computing}
+    \field{year}{2008}
+  \endentry
+
+  \entry{KSKO2017}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KSTOTYKO}{%
+         family={Kohta\bibnamedelima Shigenobu},
+         familyi={K\bibinitperiod\bibinitdelim S\bibinitperiod},
+         suffix={Kanemitsu\bibnamedelima Ootsu},
+         suffixi={K\bibinitperiod\bibinitdelim O\bibinitperiod},
+         given={Takeshi Ohkawa Takashi\bibnamedelima Yokota},
+         giveni={T\bibinitperiod\bibinitdelim O\bibinitperiod
+  T\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KSKOTOTY1}
+    \strng{fullhash}{KSKOTOTY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2017 Fifth International Symposium on Computing and
+  Networking}
+    \field{pages}{575\bibrangedash 579}
+    \field{title}{A Translation Method of ARM Machine Code to LLVM-IR for
+  Binary Code Parallelization and Optimization}
+    \field{year}{2017}
+  \endentry
+
+  \entry{MTK2011}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MTSC}{%
+         family={Manjunath\bibnamedelima T.K},
+         familyi={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+         given={Sharmila\bibnamedelima Chidaravalli},
+         giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MTSC1}
+    \strng{fullhash}{MTSC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2011 IEEE 3rd International Conference on Communication
+  Software and Networks}
+    \field{pages}{418\bibrangedash 422}
+    \field{title}{Static Analysis of Designing A Compiler Tool That Generates
+  Machine Codes for The Predicted Execution Path: A Bypass Compiler}
+    \field{year}{2011}
+  \endentry
+
+  \entry{IBM}{misc}{}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://www.ibm.com/support/knowledgecenter/SSGH4D_13.1.0/com.ibm.xlf131.aix.doc/proguide/optimizepdf.html}}
+    \field{note}{Accessed: 2019-03-15}
+    \field{title}{{IBM Knowledge Center} Profile-directed Feedback}
+  \endentry
+
+  \entry{firefox}{misc}{}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Build_Instructions/Building_with_Profile-Guided_Optimization}}
+    \field{note}{Accessed: 2019-03-15}
+    \field{title}{{Mozilla} Building with Profile-Guided Optimization}
+  \endentry
+
+  \entry{Chrome}{misc}{}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{https://blog.chromium.org/2016/10/making-chrome-on-windows-faster-with-pgo.html}}
+    \field{note}{Accessed: 2019-03-15}
+    \field{title}{{Chromium} Making Chrome on Windows Faster with PGO}
+  \endentry
+
+  \entry{SUIF}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RPWCSWSPAJMASWKTSWLCWTMWHMSLJLHRSF}{%
+         family={R.\bibnamedelima P.\bibnamedelima Wilson},
+         familyi={R\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim
+  W\bibinitperiod},
+         suffix={R.\bibnamedelima S.\bibnamedelima French},
+         suffixi={R\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+  F\bibinitperiod},
+         given={C.\bibnamedelima S. Wilson S. P. Amarasinghe J. M. Anderson S.
+  W. K. Tjiang S.-W. Liao C.-W. Tseng M. W. Hall M. S. Lam J. L.\bibnamedelima
+  Hennessy},
+         giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod W\bibinitperiod
+  S\bibinitperiod P\bibinitperiod A\bibinitperiod J\bibinitperiod
+  M\bibinitperiod A\bibinitperiod S\bibinitperiod W\bibinitperiod
+  K\bibinitperiod T\bibinitperiod S\bibinitperiod-W\bibinitperiod
+  L\bibinitperiod C\bibinitperiod-W\bibinitperiod T\bibinitperiod
+  M\bibinitperiod W\bibinitperiod H\bibinitperiod M\bibinitperiod
+  S\bibinitperiod L\bibinitperiod J\bibinitperiod L\bibinitperiod\bibinitdelim
+  H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RPWRSFCSWSPAJMASWKTSWLCWTMWHMSLJLH1}
+    \strng{fullhash}{RPWRSFCSWSPAJMASWKTSWLCWTMWHMSLJLH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{SIGPLAN Not., Vol.29, No.12}
+    \field{pages}{31\bibrangedash 37}
+    \field{title}{SUIF: An Infrastructure for Research on Parallelizing and
+  Optimizing Compilers}
+    \field{year}{1994}
+  \endentry
+\enddatalist
+\endinput

@@ -1,0 +1,40 @@
+^^I$ cat ./sample_prof
+^^Idesc: --time-unit=B --detailed-freq=1
+^^Icmd: ./sample1
+^^Itime_unit: B
+^^I#-----------
+^^Isnapshot=0
+^^I#-----------
+^^Itime=0
+^^Imem_heap_B=0
+^^Imem_heap_extra_B=0
+^^Imem_stacks_B=0
+^^Iheap_tree=detailed
+^^In0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+^^I#-----------
+^^Isnapshot=1
+^^I#-----------
+^^Itime=1016
+^^Imem_heap_B=1000
+^^Imem_heap_extra_B=16
+^^Imem_stacks_B=0
+^^Iheap_tree=detailed
+^^In1: 1000 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+^^In0: 1000 0x108730: main (in /home/vitowu/Github/CIE6020-CourseProj/test/valgrind_massif/sample1)
+^^I...
+^^I#-----------
+^^Isnapshot=24
+^^I#-----------
+^^Itime=30344
+^^Imem_heap_B=10000
+^^Imem_heap_extra_B=24
+^^Imem_stacks_B=0
+^^Iheap_tree=detailed
+^^In3: 10000 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+^^In2: 8000 0x1086FC: g (in /home/vitowu/Github/CIE6020-CourseProj/test/valgrind_massif/sample1)
+^^In1: 4000 0x108712: f (in /home/vitowu/Github/CIE6020-CourseProj/test/valgrind_massif/sample1)
+^^In0: 4000 0x10874C: main (in /home/vitowu/Github/CIE6020-CourseProj/test/valgrind_massif/sample1)
+^^In0: 4000 0x108751: main (in /home/vitowu/Github/CIE6020-CourseProj/test/valgrind_massif/sample1)
+^^In1: 2000 0x10870D: f (in /home/vitowu/Github/CIE6020-CourseProj/test/valgrind_massif/sample1)
+^^In0: 2000 0x10874C: main (in /home/vitowu/Github/CIE6020-CourseProj/test/valgrind_massif/sample1)
+^^In0: 0 in 1 place, below massif's threshold (1.00%)
