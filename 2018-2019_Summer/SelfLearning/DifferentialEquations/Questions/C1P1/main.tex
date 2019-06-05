@@ -1,0 +1,181 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter this block of commands.  If you're proficient at LaTeX, you may include additional packages, create macros, etc. immediately below this block of commands, but make sure to NOT alter the header, margin, and comment settings here. 
+\documentclass[12pt]{article}
+ \usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts, enumitem, fancyhdr, color, comment, graphicx, environ}
+\pagestyle{fancy}
+\setlength{\headheight}{65pt}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{sol}
+    {\emph{Solution:}
+    }
+    {
+    \qed
+    }
+\specialcomment{com}{ \color{blue} \textbf{Comment:} }{\color{black}} %for instructor comments while grading
+\NewEnviron{probscore}{\marginpar{ \color{blue} \tiny Problem Score: \BODY \color{black} }}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Fill in the appropriate information below
+\lhead{Vito Wu}  %replace with your name
+\rhead{Differential Equations \\ Chapter 1 \\ Exercise 1} %replace XYZ with the homework course number, semester (e.g. ``Spring 2019"), and assignment number.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter this block.
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%Solutions to problems go below.  Please follow the guidelines from https://www.overleaf.com/read/sfbcjxcgsnsk/
+
+
+%Copy the following block of text for each problem in the assignment.
+\begin{problem}{1} 
+The radium in a piece of lead decomposes at a rate which is proportional to the amount present. If 10 percent of the radium decomposes in 200 years, what percent of the original amount of radium will be present in a piece of lead after 1000 years?
+\end{problem}
+\begin{sol}
+The relationship between the decomposition rate and the amount present can be represented by
+\begin{align*}
+	\frac{dx}{dt} &= -kx \\
+	\frac{dx}{x} &= -kdt
+\end{align*}
+Integration of the equation gives 
+\begin{align*}
+	\log x &= -kt + c \\
+	x &= Ae^{-kt}
+\end{align*}
+Substitute the equation with $x = 0.9A$ and $t = 200$, we can obtain 
+\begin{align*}
+	0.9A &= Ae^{-200k} \\
+	0.9  &= e^{-200k} \\
+	k    &= 0.0005268
+\end{align*}
+Hence, after 1000 years
+\begin{align*}
+	x &= Ae^{-0.0005268*1000} \\
+	  &= 59.0492\%A
+\end{align*}
+\end{sol}
+
+\begin{problem}{2}
+Assume that the half life of the radium in a piece of lead is 1600 years. How much radium will be lost in 100 years?
+\end{problem}
+\begin{sol}
+From problem(1) the relationship can be inherited that 
+\begin{align*}
+	x &= Ae^{-kt}
+\end{align*}
+Substitute the equation with $x = 0.5A$ and $t = 1600$, we can obtain
+\begin{align*}
+	0.5 &= e^{-1600k} \\
+	k   &= 0.0004332
+\end{align*}
+Hence after 100 years
+\begin{align*}
+	x &= Ae^{-0.0004332*100} \\
+	  &= 95.7605\% A 
+\end{align*}
+Therefore the loss will be 4.240\%
+\end{sol}
+
+\begin{problem}{3}
+The following item appeared in a newspaper. "The expedition used the carbon-14 test to measure the amount of radioactivity still present in the organic material found in the ruins, thereby determining that a town existed there as long ago as 7000 B.C." Using the half-life figure of C-14 as given in the text, determine the approximate percentage of C-14 still present in the organic material at the time of the discovery.
+\end{problem}
+\begin{sol}
+From the text we know that the half-life of $C^{14}$ is approximate average of 5600 years, 
+\begin{align*}
+	0.5 &= e^{-5600k} \\
+	k   &= 0.0001238
+\end{align*}
+Hence the remaining $C^{14}$ is given by
+\begin{align*}
+	Ae^{-0.0001238*(7000+2019)} &= 32.7407\%A
+\end{align*}
+\end{sol}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter anything below this line.
+\end{document}
