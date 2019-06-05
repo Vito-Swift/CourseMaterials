@@ -1,0 +1,31 @@
+\begin{thebibliography}{1}
+
+\bibitem{CompilerDesign}
+J.D.~Ullman A.~Aho, R.~Sethi.
+\newblock {\em Compiler: Principles, Techniques, and Tools}.
+\newblock Addison-Wesley, 1986.
+
+\bibitem{MSAli2008}
+M~S Ali.
+\newblock Compiled code compression for embedded systems using evolutionary
+  computing.
+\newblock pages 1173--1174, 2008.
+
+\bibitem{OO2009}
+Mary Jan~Irwin Ozcan~Ozturk, Mahmut~Kandemir.
+\newblock Using data compression for increasing memory system utilization.
+\newblock pages 901--914, 2009.
+
+\bibitem{KSKO2017}
+Takeshi Ohkawa Takashi~Yokota Kohta~Shigenobu, Kanemitsu~Ootsu.
+\newblock A translation method of arm machine code to llvm-ir for binary code
+  parallelization and optimization.
+\newblock pages 575--579, 2017.
+
+\bibitem{MTK2011}
+Sharmila~Chidaravalli Manjunath~T.K.
+\newblock Static analysis of designing a compiler tool that generates machine
+  codes for the predicted execution path: A bypass compiler.
+\newblock pages 418--422, 2011.
+
+\end{thebibliography}

@@ -1,0 +1,28 @@
+This is 8-bit Big BibTeX version 0.99d
+Implementation:  C for Unix
+Release version: 3.71 (18 mar 2013)
+
+Error: cannot open CS file: 88591lat.csf
+The top-level auxiliary file: main.aux
+The style file: plain.bst
+Reallocated glb_str_ptr (elt_size=8) to 10 items from 0.
+Reallocated global_strs (elt_size=20001) to 10 items from 0.
+Reallocated glb_str_end (elt_size=8) to 10 items from 0.
+Database file #1: sample.bib
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 1049 of file plain.bst
+Warning--empty journal in MSAli2008
+Warning--empty journal in OO2009
+Too many commas in name 1 of "Kohta Shigenobu, Kanemitsu Ootsu, Takeshi Ohkawa, Takashi Yokota" for entry KSKO2017
+while executing---line 1090 of file plain.bst
+Warning--empty journal in KSKO2017
+Warning--empty journal in MTK2011
+
+Here's how much of BibTeX's memory you used:
+ Cites:                 5 out of 750
+ Fields:               81 out of 5000
+ Hash table:        99852 out of 100000
+ Strings:             529 out of 100000
+ Free string pool:   5028 out of 65000
+ Wizard functions:   2118 out of 3000
+(There were 2 error messages)
