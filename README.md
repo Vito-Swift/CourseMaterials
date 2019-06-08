@@ -23,9 +23,11 @@ I am currently a Computer Science student in CUHK(SZ), and this repository store
 
 - [CSC3180 - Fundamentals of Artificial Intelligence](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Term2/CSC3180-Fundamentals_of_Artificial_Intelligence)
 
-### Electronic Engineering
+### Electronic Information Engineering
 
 - [EIE2050 - Digital Logic and Systems](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Term1/EIE2050-Digital_Logic_and_Systems)
+
+- [EIE3280 - Networks: Techology, Economics and Society](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Summer/EIE3280-Network_Pricing)
 
 ### Mathematics
 
