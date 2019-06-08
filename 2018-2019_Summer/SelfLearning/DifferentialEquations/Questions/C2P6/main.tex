@@ -1,0 +1,179 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter this block of commands.  If you're proficient at LaTeX, you may include additional packages, create macros, etc. immediately below this block of commands, but make sure to NOT alter the header, margin, and comment settings here. 
+\documentclass[12pt]{article}
+ \usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts, enumitem, fancyhdr, color, comment, graphicx, environ}
+\pagestyle{fancy}
+\setlength{\headheight}{65pt}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{sol}
+    {\emph{Solution:}
+    }
+    {
+    \qed
+    }
+\specialcomment{com}{ \color{blue} \textbf{Comment:} }{\color{black}} %for instructor comments while grading
+\NewEnviron{probscore}{\marginpar{ \color{blue} \tiny Problem Score: \BODY \color{black} }}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{tabto}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Fill in the appropriate information below
+\lhead{Vito Wu}  %replace with your name
+\rhead{Differential Equations \\ Chapter 2 \\ Exercise 6} %replace XYZ with the homework course number, semester (e.g. ``Spring 2019"), and assignment number.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\begin{problem}{1}
+Find a 1-parameter family of solutions of each of the differential equations 1-16 below. Be careful to justify all steps used in obtaining a solution and to indicate intervals for which the differential equation and the solution are valid. Also try to discover particular solutions which are not members of the family of solutions.\\
+1. $ y\prime = y $. \tab 2. $ xdy-ydx=0 $. \tab 3. $ \frac{dr}{d\theta} = -\sin\theta$.\tab 4. $ (y^2+1)dx-(x^2+1)dy=0 $. \tab 5. $ \frac{dr}{d\theta}\cot\theta - r = 2 $. \tab 6. $ yx^2dy-y^3dx=2x^2dy $. \tab 7. $ (y^2-1)dx-(2y+xy)dy=0 $. \tab 8. $ x\log xdy+\sqrt{1+y^2}dx=0 $. \tab 9. $ \exp^{x+1}\tan ydx+\cos ydyd = 0 $. \tab 10. $ x\cos y dx+x^2\sin y dy = a^2\sin y dy $. \tab 11. $ \frac{dr}{d\theta} = r\tan\theta$. \tab 12. $(x-1)\cos y dy = 2x \sin y dx$. \tab 13. $ y\prime = y\log y \cot x $. \tab 14. $ xdy+(1+y^2)\arctan y dx = 0 $. \tab 15. $ dy+x(y+1)dx = 0 $. \tab 16. $ e^{y^2}(x^2+2x+1)dx+(xy+y)dy = 0 $.
+\end{problem}
+\begin{sol}
+1.  
+\begin{align*}
+	\frac{dy}{y} &= dx \\
+	\int \frac{dy}{y} &= \int dx \\ 
+	\log y &= x + c \\
+	y &= c\exp^{x}
+\end{align*}
+2. 
+\begin{align*}
+	\frac{dy}{y} - \frac{dx}{x} &= 0\\
+	\int \frac{dy}{y} &= \int \frac{dx}{x} \\
+	\log y &= \log x + c \\
+	y &= cx
+\end{align*}
+3. 
+\begin{align*}
+	dr &= -\sin\theta d\theta \\
+	r &= cos\theta + c
+\end{align*}
+4. 
+\begin{align*}
+	\frac{dx}{x^2+1}dx - \frac{dy}{y^2+1} &= 0 \\
+	\arctan x &= \arctan y + c
+\end{align*}
+5. 
+\begin{align*}
+	\cot\theta dr + (2-r)d\theta &= 0 \\
+	\frac{1}{2-r}dr + \tan\theta d\theta &= 0 \\
+	-\ln (2-r) + \ln\sec\theta &= c \\
+	r = c\sec\theta - 2
+\end{align*}
+6. 
+\begin{align*}
+	(y-2)x^2dy - y^3 dx &= 0 \\
+	\frac{y-2}{y^3}dy - \frac{dx}{x^2} &= 0 \\
+	(cx+1)y^2 &= x(y-1)
+\end{align*}
+7. 
+\begin{align*}
+	\frac{dx}{2+x} - \frac{y}{y^2-1}dy &= 0 \\
+	\frac{1}{2}\log(y^2 -1)  &= \log (2+x) + c \\
+	\sqrt{y^2-1} &= c(x+2)
+\end{align*}
+8.
+\begin{align*}
+	\frac{dy}{\sqrt{1+y^2}} + \frac{dx}{x\log x} &= 0 \\
+	\sinh^{-1}y &= \log\log x + c
+\end{align*}
+9. 
+\begin{align*}
+	e^{x+1}dx + \cot y \cos y dy &= 0 \\
+	e^{x+1} + \cos y +\log\sin\frac{y}{2} - \log\cos\frac{y}{2} &= 0
+\end{align*}
+10. 
+\begin{align*}
+	x\cos y dx + (x^2-a^2)\sin y dy &= 0\\
+	\frac{x}{x^2-a^2} + \tan y &= 0 \\
+	\frac{1}{2}\log(x^2-a^2) + c &= \log\cos y\\
+	\cos^2 y &= c(a^2-x^2)
+\end{align*}
+11.
+\begin{align*}
+	\frac{dr}{r} &= \frac{\sin\theta}{\cos\theta}d\theta \\
+	\log r &= -\log|\cos\theta| + c \\
+	r\cos\theta &= c
+\end{align*}
+12. 
+\begin{align*}
+	\cot y dy &= \frac{2x}{x-1}dx \\
+	\log\sin y dy &= 2x + 2\log(x-1) + c \\
+	\sin y &= (x-1)^2e^{2x+c}
+\end{align*}
+13.
+\begin{align*}
+	\frac{dy}{y\log y} &= \frac{\cos x}{\sin x}dx \\
+	\log|\log y | &= \log |\sin x| + c\\
+	\log y &= c\sin x
+\end{align*}
+14.
+\begin{align*}
+	\frac{dy}{(1+y^2)\arctan y} + \frac{dx}{x} &= 0 \\
+	\log\arctan y &= -\log x + c \\
+	y &= \tan\frac{c}{x}
+\end{align*}
+15.
+\begin{align*}
+	\frac{dy}{y+1} + xdx &= 0 \\
+	\log y+1 + \frac{1}{2}x^2 &= c \\
+	y &= ce^{-\frac{1}{2}x^2}-1
+\end{align*}
+16.
+\begin{align*}
+	(x+1)dx+\frac{y}{e^{y^2}}dy &= 0\\
+	\frac{1}{2}x^2 + x -\frac{1}{2}e^{-y^2}+c &= 0 
+\end{align*}
+\end{sol}
+
+\begin{problem}{2}
+Find a particular solution satisfying the initial condition, of each of the following differential equations 17-21. The initial condition is indicated alongside each equation. \\
+17. $ \frac{dy}{dx} + y = 0, y(1) = 1$. \\
+18. $ \sin x \cos 2y dx + \cos x \sin 2ydy = 0, y(0) = \frac{\pi}{2} $. \\ 
+19. $ (1-x)dy = x(y+1) dx, y(0) = 0$. \\
+20. $ ydy+xdx = 3xy^2dx, y(2) = 1 $. \\
+21. $ dy = e^{x+y}dx, y(0) = 0 $. \\
+22. Define the differential of a function of three independent variables; of n independent variables.
+\end{problem}
+\begin{sol}
+17.
+\begin{align*}
+	\frac{dy}{y} &= -dx \\
+	\log y &= -x + c \\
+	y &= ce^{-x}
+\end{align*}
+From the initial condition we can obtain $ c = e $, thus $ y = e^{1-x} $.\\
+18.
+\begin{align*}
+	\tan x dx + \tan 2y dy &= 0 \\
+	\log |cos x| + \frac{1}{2}\log |cos 2y| &= c \\
+	\cos 2y \cos^2x &= c
+\end{align*}	
+From the initial condition we can obtain $ c = 1 $, thus $ \cos 2y\cos^2 x = 1 $.\\
+19.
+\begin{align*}
+	\frac{x}{1-x}dx &= \frac{dy}{y+1} \\
+	-x-\log(1-x) &= \log (y+1) + c
+\end{align*}
+From the initial condition we can obtain $ c = 0 $, thus $ e^{-x} = (y+1)(1-x) $. \\
+20.
+\begin{align*}
+	\frac{y}{1-3y^2}dy + xdx &= 0 \\
+	-\frac{1}{6}\log(1-3y^2) + \frac{1}{2}x^2 &= c 
+\end{align*}
+From the initial condition we can obtain $ c = 2-\frac{1}{6-\log 2} $, thus $ 3y^2 = 1+2e^{3x^2-12} $. \\
+21. 
+\begin{align*}
+	\frac{dy}{e^y} &= e^x dx \\
+	-e^{-y} = e^x + c
+\end{align*}
+From the initial condition we can obtain $ c = -2 $, thus $ 2 = e^{-y} + e^x $.
+
+\end{sol}
+
+
+\end{document}
