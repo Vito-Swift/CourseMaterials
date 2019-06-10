@@ -32,11 +32,9 @@ I am currently a Computer Science student in CUHK(SZ), and this repository store
 ### Mathematics
 
 - MAT1001 - Calculus I\*
-
 - MAT1002 - Calculus II\*
-
 - [MAT2040 - Linear Algebra](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Term1/MAT2040-Linear_Algebra)
-
+- [MAT3007 - Optimization I](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Summer/MAT3007-Optimization1)
 - [MAT3350 - Information Theory](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Term2/CIE6020-Information_Theory)
 
 ### Philosophy
@@ -81,3 +79,4 @@ I am currently a Computer Science student in CUHK(SZ), and this repository store
 ## Courses Taken Online
 
 - [CS143 - Compilers](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Term2/CS143-Compilers)
+- [Ordinary Differential Equations](https://github.com/Vito-Swift/CourseMaterials/tree/master/2018-2019_Summer/Ordinary_Differential_Equations)
